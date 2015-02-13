@@ -7,3 +7,7 @@ sites/*/private
 
 # Ignore sites configuration
 sites/sites.php
+
+# Ignore devel & search_krumo
+sites/*/modules/contrib/devel
+sites/*/modules/contrib/search_krumo
