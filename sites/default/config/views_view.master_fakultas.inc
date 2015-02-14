@@ -26,6 +26,7 @@ $handler->display->display_options['cache']['type'] = 'none';
 $handler->display->display_options['query']['type'] = 'views_query';
 $handler->display->display_options['exposed_form']['type'] = 'basic';
 $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Cari';
+$handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
 $handler->display->display_options['pager']['type'] = 'full';
 $handler->display->display_options['pager']['options']['items_per_page'] = '10';
 $handler->display->display_options['style_plugin'] = 'table';
@@ -82,6 +83,7 @@ $handler->display->display_options['header']['link']['class'] = 'btn btn-success
 $handler->display->display_options['footer']['result']['id'] = 'result';
 $handler->display->display_options['footer']['result']['table'] = 'views';
 $handler->display->display_options['footer']['result']['field'] = 'result';
+$handler->display->display_options['footer']['result']['content'] = 'Displaying @start - @end of @total.';
 /* Field: Global: View result counter */
 $handler->display->display_options['fields']['counter']['id'] = 'counter';
 $handler->display->display_options['fields']['counter']['table'] = 'views';
@@ -123,20 +125,25 @@ $handler->display->display_options['filters']['machine_name']['field'] = 'machin
 $handler->display->display_options['filters']['machine_name']['value'] = array(
   'master_fakultas' => 'master_fakultas',
 );
-/* Filter criterion: Taxonomy term: Name */
-$handler->display->display_options['filters']['name']['id'] = 'name';
-$handler->display->display_options['filters']['name']['table'] = 'taxonomy_term_data';
-$handler->display->display_options['filters']['name']['field'] = 'name';
-$handler->display->display_options['filters']['name']['operator'] = 'word';
-$handler->display->display_options['filters']['name']['exposed'] = TRUE;
-$handler->display->display_options['filters']['name']['expose']['operator_id'] = 'name_op';
-$handler->display->display_options['filters']['name']['expose']['label'] = 'Cari Nama Fakultas';
-$handler->display->display_options['filters']['name']['expose']['operator'] = 'name_op';
-$handler->display->display_options['filters']['name']['expose']['identifier'] = 'name';
-$handler->display->display_options['filters']['name']['expose']['remember_roles'] = array(
+/* Filter criterion: Global: Combine fields filter */
+$handler->display->display_options['filters']['combine']['id'] = 'combine';
+$handler->display->display_options['filters']['combine']['table'] = 'views';
+$handler->display->display_options['filters']['combine']['field'] = 'combine';
+$handler->display->display_options['filters']['combine']['operator'] = 'word';
+$handler->display->display_options['filters']['combine']['exposed'] = TRUE;
+$handler->display->display_options['filters']['combine']['expose']['operator_id'] = 'combine_op';
+$handler->display->display_options['filters']['combine']['expose']['label'] = 'Pencarian';
+$handler->display->display_options['filters']['combine']['expose']['operator'] = 'combine_op';
+$handler->display->display_options['filters']['combine']['expose']['identifier'] = 'combine';
+$handler->display->display_options['filters']['combine']['expose']['remember_roles'] = array(
   2 => '2',
   1 => 0,
   3 => 0,
+);
+$handler->display->display_options['filters']['combine']['fields'] = array(
+  'field_integer_code' => 'field_integer_code',
+  'field_abbreviation' => 'field_abbreviation',
+  'name' => 'name',
 );
 
 /* Display: Page */

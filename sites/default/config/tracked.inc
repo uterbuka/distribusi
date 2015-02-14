@@ -10,7 +10,7 @@ $tracked = array (
   'permission.delete_terms_in_1' => '76cf5f8950f540aea2eaa1ec2bc44b9df848c05f',
   'permission.edit_terms_in_1' => '347586ebbe9dd43360066c8832e3681e16c3d003',
   'vocabulary.master_fakultas' => '716054bc9651c13815ac84421ef22fa536f482a5',
-  'views_view.master_fakultas' => '46fecd3014f980053b251c23795d85518133d482',
+  'views_view.master_fakultas' => '7497225e847a27fc21d9743660843c1cb6e83dc4',
 );
 
 
