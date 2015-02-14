@@ -10,6 +10,8 @@ $tracked = array (
   'permission.delete_terms_in_1' => '76cf5f8950f540aea2eaa1ec2bc44b9df848c05f',
   'permission.edit_terms_in_1' => '347586ebbe9dd43360066c8832e3681e16c3d003',
   'vocabulary.master_fakultas' => '716054bc9651c13815ac84421ef22fa536f482a5',
+  'feeds_importer.master_fakultas' => '459c6f0ad7750dae0ca48fe26e9158e3ae519b0a',
+  'feeds_importer.users' => '4d600944e817228c78bebe38f6db121937e418d1',
   'views_view.master_fakultas' => '7497225e847a27fc21d9743660843c1cb6e83dc4',
 );
 
@@ -17,6 +19,8 @@ $tracked = array (
 // The following modules are required to run the configurations of this file.
 
 $modules = array(
+  'ctools',
+  'feeds',
   'field_sql_storage',
   'text',
   'number',
