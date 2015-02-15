@@ -1,15 +1,15 @@
 <?php
 /**
  * @file
- * permission.delete_terms_in_1.inc
+ * permission.edit_terms_in_2.inc
  */
 
 $api = '2.0.0';
 
 $data = array(
-  'permission' => 'delete terms in 1',
+  'permission' => 'edit terms in 2',
   'roles' => array(
-    0 => 'administrator',
+    0 => 'authenticated user',
   ),
 );
 

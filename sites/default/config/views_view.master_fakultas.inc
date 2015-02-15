@@ -27,6 +27,7 @@ $handler->display->display_options['query']['type'] = 'views_query';
 $handler->display->display_options['exposed_form']['type'] = 'basic';
 $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Cari';
 $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
+$handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Muat ulang';
 $handler->display->display_options['pager']['type'] = 'full';
 $handler->display->display_options['pager']['options']['items_per_page'] = '10';
 $handler->display->display_options['style_plugin'] = 'table';
@@ -83,7 +84,7 @@ $handler->display->display_options['header']['link']['class'] = 'btn btn-success
 $handler->display->display_options['footer']['result']['id'] = 'result';
 $handler->display->display_options['footer']['result']['table'] = 'views';
 $handler->display->display_options['footer']['result']['field'] = 'result';
-$handler->display->display_options['footer']['result']['content'] = 'Displaying @start - @end of @total.';
+$handler->display->display_options['footer']['result']['content'] = 'Data ke @start sampai @end dari @total.';
 /* Field: Global: View result counter */
 $handler->display->display_options['fields']['counter']['id'] = 'counter';
 $handler->display->display_options['fields']['counter']['table'] = 'views';
@@ -117,7 +118,7 @@ $handler->display->display_options['fields']['edit_term']['table'] = 'taxonomy_t
 $handler->display->display_options['fields']['edit_term']['field'] = 'edit_term';
 $handler->display->display_options['fields']['edit_term']['label'] = '';
 $handler->display->display_options['fields']['edit_term']['element_label_colon'] = FALSE;
-$handler->display->display_options['fields']['edit_term']['text'] = 'edit';
+$handler->display->display_options['fields']['edit_term']['text'] = 'ubah';
 /* Filter criterion: Taxonomy vocabulary: Machine name */
 $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
 $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
