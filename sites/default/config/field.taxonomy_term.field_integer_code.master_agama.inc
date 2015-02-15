@@ -48,9 +48,9 @@ $data = array(
     ),
   ),
   'field_instance' => array(
-    'label' => 'kode agama',
+    'label' => 'Kode Agama',
     'widget' => array(
-      'weight' => '0',
+      'weight' => 0,
       'type' => 'number',
       'module' => 'number',
       'active' => 0,
@@ -77,7 +77,7 @@ $data = array(
         'weight' => 0,
       ),
     ),
-    'required' => 0,
+    'required' => 1,
     'description' => '',
     'default_value' => NULL,
     'field_name' => 'field_integer_code',

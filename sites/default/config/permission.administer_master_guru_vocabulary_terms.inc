@@ -8,7 +8,9 @@ $api = '2.0.0';
 
 $data = array(
   'permission' => 'administer master_guru vocabulary terms',
-  'roles' => array(),
+  'roles' => array(
+    0 => 'authenticated user',
+  ),
 );
 
 $dependencies = array();
