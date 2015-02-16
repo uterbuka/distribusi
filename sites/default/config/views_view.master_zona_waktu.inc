@@ -108,6 +108,7 @@ $handler->display->display_options['style_options']['info'] = array(
 $handler->display->display_options['header']['link']['id'] = 'link';
 $handler->display->display_options['header']['link']['table'] = 'views';
 $handler->display->display_options['header']['link']['field'] = 'link';
+$handler->display->display_options['header']['link']['empty'] = TRUE;
 $handler->display->display_options['header']['link']['text'] = 'Tambah data';
 $handler->display->display_options['header']['link']['path'] = 'admin/structure/taxonomy/master_zona_waktu/add';
 $handler->display->display_options['header']['link']['class'] = 'btn btn-success';
@@ -123,11 +124,10 @@ $handler->display->display_options['fields']['counter']['field'] = 'counter';
 $handler->display->display_options['fields']['counter']['label'] = 'No';
 $handler->display->display_options['fields']['counter']['counter_start'] = '1';
 $handler->display->display_options['fields']['counter']['reverse'] = 0;
-/* Field: Taxonomy term: Kode Jurusan Asal */
+/* Field: Taxonomy term: Kode UPBJJ */
 $handler->display->display_options['fields']['field_integer_code']['id'] = 'field_integer_code';
 $handler->display->display_options['fields']['field_integer_code']['table'] = 'field_data_field_integer_code';
 $handler->display->display_options['fields']['field_integer_code']['field'] = 'field_integer_code';
-$handler->display->display_options['fields']['field_integer_code']['label'] = 'Kode Zona Waktu';
 $handler->display->display_options['fields']['field_integer_code']['settings'] = array(
   'thousand_separator' => ' ',
   'prefix_suffix' => 1,
