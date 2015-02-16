@@ -78,7 +78,7 @@ $handler->display->display_options['header']['link']['table'] = 'views';
 $handler->display->display_options['header']['link']['field'] = 'link';
 $handler->display->display_options['header']['link']['empty'] = TRUE;
 $handler->display->display_options['header']['link']['text'] = 'Tambah data';
-$handler->display->display_options['header']['link']['path'] = 'admin/structure/taxonomy/master_fakultas/add';
+$handler->display->display_options['header']['link']['path'] = 'admin/structure/taxonomy/master_guru/add';
 $handler->display->display_options['header']['link']['class'] = 'btn btn-success';
 /* Footer: Global: Result summary */
 $handler->display->display_options['footer']['result']['id'] = 'result';
@@ -93,10 +93,11 @@ $handler->display->display_options['fields']['counter']['label'] = 'No';
 $handler->display->display_options['fields']['counter']['counter_start'] = '1';
 $handler->display->display_options['fields']['counter']['reverse'] = 0;
 /* Field: Taxonomy term: Kode UPBJJ */
-$handler->display->display_options['fields']['field_integer_code_1']['id'] = 'field_integer_code_1';
-$handler->display->display_options['fields']['field_integer_code_1']['table'] = 'field_data_field_integer_code';
-$handler->display->display_options['fields']['field_integer_code_1']['field'] = 'field_integer_code';
-$handler->display->display_options['fields']['field_integer_code_1']['settings'] = array(
+$handler->display->display_options['fields']['field_integer_code']['id'] = 'field_integer_code';
+$handler->display->display_options['fields']['field_integer_code']['table'] = 'field_data_field_integer_code';
+$handler->display->display_options['fields']['field_integer_code']['field'] = 'field_integer_code';
+$handler->display->display_options['fields']['field_integer_code']['label'] = 'Kode Guru';
+$handler->display->display_options['fields']['field_integer_code']['settings'] = array(
   'thousand_separator' => ' ',
   'prefix_suffix' => 1,
 );
@@ -104,11 +105,12 @@ $handler->display->display_options['fields']['field_integer_code_1']['settings']
 $handler->display->display_options['fields']['name']['id'] = 'name';
 $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
 $handler->display->display_options['fields']['name']['field'] = 'name';
+$handler->display->display_options['fields']['name']['label'] = 'Keterangan Nama';
 /* Field: Taxonomy term: Term edit link */
 $handler->display->display_options['fields']['edit_term']['id'] = 'edit_term';
 $handler->display->display_options['fields']['edit_term']['table'] = 'taxonomy_term_data';
 $handler->display->display_options['fields']['edit_term']['field'] = 'edit_term';
-$handler->display->display_options['fields']['edit_term']['label'] = 'Aksi';
+$handler->display->display_options['fields']['edit_term']['label'] = '';
 $handler->display->display_options['fields']['edit_term']['element_label_colon'] = FALSE;
 $handler->display->display_options['fields']['edit_term']['text'] = 'ubah';
 /* Filter criterion: Taxonomy vocabulary: Machine name */
@@ -125,7 +127,7 @@ $handler->display->display_options['filters']['combine']['field'] = 'combine';
 $handler->display->display_options['filters']['combine']['operator'] = 'word';
 $handler->display->display_options['filters']['combine']['exposed'] = TRUE;
 $handler->display->display_options['filters']['combine']['expose']['operator_id'] = 'combine_op';
-$handler->display->display_options['filters']['combine']['expose']['label'] = 'Pencarian';
+$handler->display->display_options['filters']['combine']['expose']['label'] = 'Pencarian :';
 $handler->display->display_options['filters']['combine']['expose']['operator'] = 'combine_op';
 $handler->display->display_options['filters']['combine']['expose']['identifier'] = 'combine';
 $handler->display->display_options['filters']['combine']['expose']['remember_roles'] = array(
@@ -134,7 +136,7 @@ $handler->display->display_options['filters']['combine']['expose']['remember_rol
   3 => 0,
 );
 $handler->display->display_options['filters']['combine']['fields'] = array(
-  'field_integer_code_1' => 'field_integer_code_1',
+  'field_integer_code' => 'field_integer_code',
   'name' => 'name',
 );
 
