@@ -8,7 +8,7 @@ $tracked = array (
   'field.taxonomy_term.field_email_upbjj.master_upbjj' => '0be1c31d440d00b137c3d6bedf04de6cb0d83e42',
   'field.taxonomy_term.field_integer_code.master_agama' => '91b1706bd4369a262c563cfb2bcd22b0fe1f6230',
   'field.taxonomy_term.field_integer_code.master_fakultas' => '7321d08f91865c4dfcd708191f56506b08fa07f6',
-  'field.taxonomy_term.field_integer_code.master_guru' => 'ca3a800a878c0c711a4ea3d47d55f244cbfc8974',
+  'field.taxonomy_term.field_integer_code.master_guru' => '61b6d7d904815aa6131b292ac3d946bbc7f0a7db',
   'field.taxonomy_term.field_integer_code.master_jurusan_asal' => '0c2e0c3535b6fc2819a9a837b2ba6e827c6fb365',
   'field.taxonomy_term.field_integer_code.master_status_kerja' => '440d00ecd84feb65cc4f2b20657d14655cf4134a',
   'field.taxonomy_term.field_integer_code.master_upbjj' => 'f7aa9f60312684101d4c6e32c76d35a25fe64f94',
@@ -16,7 +16,6 @@ $tracked = array (
   'field.taxonomy_term.field_kode_zona_waktu.master_upbjj' => 'dabb39d5c16706638a12df0632f7d909bdcfd9cc',
   'field.taxonomy_term.field_nomor_fax_upbjj.master_upbjj' => 'fdced75d42747dda8037fedd7acc0ef43c3b1fe2',
   'variable.field_bundle_settings_taxonomy_term__master_fakultas' => 'd33e43876005ac149d2f2ab995290d3179abb8b8',
-  'variable.field_bundle_settings_taxonomy_term__master_guru' => '9a4210a459b3a4277e382bd88a401b0da4513656',
   'permission.access_overlay' => '8689a870a7abab2f7e90baa567490edd4a7ca948',
   'permission.administer_master_agama_vocabulary_terms' => 'c0640e49635b8702e7eb185b1f4649bcf6a5135c',
   'permission.administer_master_fakultas_vocabulary_terms' => '6726753922cc75aa4d0bc62d3782fe7561d4f2e4',
@@ -52,11 +51,11 @@ $tracked = array (
   'feeds_importer.users' => '4d600944e817228c78bebe38f6db121937e418d1',
   'views_view.master_agama' => 'ac6d5df9051013ecacbbf60f9c2051297f34b55d',
   'views_view.master_fakultas' => '1dd7f68d9767be55d41a611f6ea96bdd971a2b4c',
-  'views_view.master_guru' => 'dd10154f94f214bbab77ef19a3a820786b65b7e1',
+  'views_view.master_guru' => 'd66b1b99155483fe420f8208ff8698ceaa9cd21f',
   'views_view.master_jurusan_asal' => '989035fe86bb21c68c4a4790a7622b6aa8186580',
   'views_view.master_status_kerja' => 'f7bd2ffed361dff5427470383c5e57647c0d4404',
-  'views_view.master_upbjj' => 'f149d6046a625d9b6fb83d97d237638663b453d3',
-  'views_view.master_zona_waktu' => 'c23ce87bd2b3b819c1ca45217ece8f3580f7d1fb',
+  'views_view.master_upbjj' => '822812b686b806b04a884ced64c1a5bb7c21bd6b',
+  'views_view.master_zona_waktu' => '1f4441cb8d6feda7d84dda640e4773d1e1f8b480',
 );
 
 

@@ -128,7 +128,6 @@ $handler->display->display_options['fields']['counter']['reverse'] = 0;
 $handler->display->display_options['fields']['field_integer_code']['id'] = 'field_integer_code';
 $handler->display->display_options['fields']['field_integer_code']['table'] = 'field_data_field_integer_code';
 $handler->display->display_options['fields']['field_integer_code']['field'] = 'field_integer_code';
-$handler->display->display_options['fields']['field_integer_code']['label'] = 'Kode';
 $handler->display->display_options['fields']['field_integer_code']['settings'] = array(
   'thousand_separator' => ' ',
   'prefix_suffix' => 1,
@@ -137,7 +136,7 @@ $handler->display->display_options['fields']['field_integer_code']['settings'] =
 $handler->display->display_options['fields']['name_1']['id'] = 'name_1';
 $handler->display->display_options['fields']['name_1']['table'] = 'taxonomy_term_data';
 $handler->display->display_options['fields']['name_1']['field'] = 'name';
-$handler->display->display_options['fields']['name_1']['label'] = 'Nama';
+$handler->display->display_options['fields']['name_1']['label'] = 'Nama UPBJJ';
 /* Field: Taxonomy term: Alamat UPBJJ - Thoroughfare (i.e. Street address) */
 $handler->display->display_options['fields']['field_alamat_kantor_thoroughfare']['id'] = 'field_alamat_kantor_thoroughfare';
 $handler->display->display_options['fields']['field_alamat_kantor_thoroughfare']['table'] = 'field_data_field_alamat_kantor';
@@ -147,17 +146,15 @@ $handler->display->display_options['fields']['field_alamat_kantor_thoroughfare']
 $handler->display->display_options['fields']['field_alamat_kantor_postal_code']['id'] = 'field_alamat_kantor_postal_code';
 $handler->display->display_options['fields']['field_alamat_kantor_postal_code']['table'] = 'field_data_field_alamat_kantor';
 $handler->display->display_options['fields']['field_alamat_kantor_postal_code']['field'] = 'field_alamat_kantor_postal_code';
-$handler->display->display_options['fields']['field_alamat_kantor_postal_code']['label'] = 'Kode Pos';
+$handler->display->display_options['fields']['field_alamat_kantor_postal_code']['label'] = 'Kode Pos UPBJJ';
 /* Field: Taxonomy term: Email UPBJJ */
 $handler->display->display_options['fields']['field_email_upbjj']['id'] = 'field_email_upbjj';
 $handler->display->display_options['fields']['field_email_upbjj']['table'] = 'field_data_field_email_upbjj';
 $handler->display->display_options['fields']['field_email_upbjj']['field'] = 'field_email_upbjj';
-$handler->display->display_options['fields']['field_email_upbjj']['label'] = 'Email';
 /* Field: Taxonomy term: Nomor Fax UPBJJ */
 $handler->display->display_options['fields']['field_nomor_fax_upbjj']['id'] = 'field_nomor_fax_upbjj';
 $handler->display->display_options['fields']['field_nomor_fax_upbjj']['table'] = 'field_data_field_nomor_fax_upbjj';
 $handler->display->display_options['fields']['field_nomor_fax_upbjj']['field'] = 'field_nomor_fax_upbjj';
-$handler->display->display_options['fields']['field_nomor_fax_upbjj']['label'] = 'Nomor Fax';
 /* Field: Taxonomy term: Kode Zona Waktu */
 $handler->display->display_options['fields']['field_kode_zona_waktu']['id'] = 'field_kode_zona_waktu';
 $handler->display->display_options['fields']['field_kode_zona_waktu']['table'] = 'field_data_field_kode_zona_waktu';
