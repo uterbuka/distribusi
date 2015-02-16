@@ -123,10 +123,11 @@ $handler->display->display_options['fields']['counter']['field'] = 'counter';
 $handler->display->display_options['fields']['counter']['label'] = 'No';
 $handler->display->display_options['fields']['counter']['counter_start'] = '1';
 $handler->display->display_options['fields']['counter']['reverse'] = 0;
-/* Field: Taxonomy term: Kode UPBJJ */
+/* Field: Taxonomy term: Kode Jurusan Asal */
 $handler->display->display_options['fields']['field_integer_code']['id'] = 'field_integer_code';
 $handler->display->display_options['fields']['field_integer_code']['table'] = 'field_data_field_integer_code';
 $handler->display->display_options['fields']['field_integer_code']['field'] = 'field_integer_code';
+$handler->display->display_options['fields']['field_integer_code']['label'] = 'Kode Zona Waktu';
 $handler->display->display_options['fields']['field_integer_code']['settings'] = array(
   'thousand_separator' => ' ',
   'prefix_suffix' => 1,

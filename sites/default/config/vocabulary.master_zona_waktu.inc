@@ -7,7 +7,7 @@
 $api = '2.0.0';
 
 $data = (object) array(
-  'vid' => '8',
+  'vid' => '4',
   'name' => 'Master Zona Waktu',
   'machine_name' => 'master_zona_waktu',
   'description' => '',

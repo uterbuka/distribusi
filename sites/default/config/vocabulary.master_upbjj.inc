@@ -7,7 +7,7 @@
 $api = '2.0.0';
 
 $data = (object) array(
-  'vid' => '7',
+  'vid' => '3',
   'name' => 'Master UPBJJ',
   'machine_name' => 'master_upbjj',
   'description' => '',
