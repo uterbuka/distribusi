@@ -29,6 +29,7 @@ $tracked = array (
   'variable.field_bundle_settings_taxonomy_term__master_status_nilai' => '14c8970917138ee617d16da42498ec5509b99cd2',
   'variable.field_bundle_settings_taxonomy_term__master_sumber_data' => '39b5830efab9413d3c19561fba2d2b6b908e527d',
   'variable.field_bundle_settings_taxonomy_term__master_upbjj' => '43ceb678ac183105d1038baf5ad1b4fc04936e01',
+  'variable.field_bundle_settings_taxonomy_term__master_zona_waktu' => '3ad3fa78d80188b907cdf57a6483527be7f12c01',
   'permission.access_overlay' => '8689a870a7abab2f7e90baa567490edd4a7ca948',
   'permission.administer_master_agama_vocabulary_terms' => 'c0640e49635b8702e7eb185b1f4649bcf6a5135c',
   'permission.administer_master_fakultas_vocabulary_terms' => '6726753922cc75aa4d0bc62d3782fe7561d4f2e4',
@@ -82,7 +83,7 @@ $tracked = array (
   'views_view.master_status_nilai' => 'bafa6ebf73bbec1a1fd18b47b996006af4460436',
   'views_view.master_sumber_data' => 'f056fd3cc674ced4218560e46af777b218ea9b01',
   'views_view.master_upbjj' => '09fae623e8c91ec8236be78ab115c75f7c346bfd',
-  'views_view.master_zona_waktu' => '10f480aa9ed437a4cfa6a63cceff7decabca6e99',
+  'views_view.master_zona_waktu' => 'ea3a7731db050313d2c0f38a536747896311df6f',
 );
 
 
