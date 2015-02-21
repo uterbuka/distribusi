@@ -168,7 +168,7 @@ $data = array(
     ),
   ),
   'field_instance' => array(
-    'label' => 'Alamat UPBJJ',
+    'label' => 'Alamat',
     'widget' => array(
       'weight' => '2',
       'type' => 'addressfield_standard',
@@ -208,7 +208,7 @@ $data = array(
         'weight' => 3,
       ),
     ),
-    'required' => 1,
+    'required' => 0,
     'description' => '',
     'default_value' => NULL,
     'field_name' => 'field_alamat_kantor',

@@ -49,14 +49,14 @@ $data = array(
     ),
   ),
   'field_instance' => array(
-    'label' => 'Email UPBJJ',
+    'label' => 'Email',
     'widget' => array(
       'weight' => '4',
       'type' => 'email_textfield',
       'module' => 'email',
       'active' => 1,
       'settings' => array(
-        'size' => '60',
+        'size' => '22',
       ),
     ),
     'settings' => array(
@@ -71,7 +71,7 @@ $data = array(
         'weight' => 1,
       ),
     ),
-    'required' => 1,
+    'required' => 0,
     'description' => '',
     'default_value' => NULL,
     'field_name' => 'field_email_upbjj',

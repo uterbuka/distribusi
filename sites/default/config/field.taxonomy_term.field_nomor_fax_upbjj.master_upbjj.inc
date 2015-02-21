@@ -69,14 +69,14 @@ $data = array(
     ),
   ),
   'field_instance' => array(
-    'label' => 'Nomor Fax UPBJJ',
+    'label' => 'Nomor Fax',
     'widget' => array(
       'weight' => '3',
       'type' => 'text_textfield',
       'module' => 'text',
       'active' => 1,
       'settings' => array(
-        'size' => '60',
+        'size' => '22',
       ),
     ),
     'settings' => array(
