@@ -78,7 +78,7 @@ $handler->display->display_options['header']['link']['table'] = 'views';
 $handler->display->display_options['header']['link']['field'] = 'link';
 $handler->display->display_options['header']['link']['empty'] = TRUE;
 $handler->display->display_options['header']['link']['text'] = 'Tambah data';
-$handler->display->display_options['header']['link']['path'] = 'admin/structure/taxonomy/master_fakultas/add';
+$handler->display->display_options['header']['link']['path'] = 'admin/structure/taxonomy/master_jurusan_asal/add';
 $handler->display->display_options['header']['link']['class'] = 'btn btn-success';
 /* Footer: Global: Result summary */
 $handler->display->display_options['footer']['result']['id'] = 'result';
@@ -96,7 +96,7 @@ $handler->display->display_options['fields']['counter']['reverse'] = 0;
 $handler->display->display_options['fields']['field_integer_code']['id'] = 'field_integer_code';
 $handler->display->display_options['fields']['field_integer_code']['table'] = 'field_data_field_integer_code';
 $handler->display->display_options['fields']['field_integer_code']['field'] = 'field_integer_code';
-$handler->display->display_options['fields']['field_integer_code']['label'] = 'Kode Jurusan Asal';
+$handler->display->display_options['fields']['field_integer_code']['label'] = 'Kode ';
 $handler->display->display_options['fields']['field_integer_code']['settings'] = array(
   'thousand_separator' => ' ',
   'prefix_suffix' => 1,
@@ -105,6 +105,7 @@ $handler->display->display_options['fields']['field_integer_code']['settings'] =
 $handler->display->display_options['fields']['name']['id'] = 'name';
 $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
 $handler->display->display_options['fields']['name']['field'] = 'name';
+$handler->display->display_options['fields']['name']['label'] = 'Nama Jurusan Asal';
 /* Field: Taxonomy term: Term edit link */
 $handler->display->display_options['fields']['edit_term']['id'] = 'edit_term';
 $handler->display->display_options['fields']['edit_term']['table'] = 'taxonomy_term_data';
@@ -131,7 +132,7 @@ $handler->display->display_options['filters']['combine']['field'] = 'combine';
 $handler->display->display_options['filters']['combine']['operator'] = 'word';
 $handler->display->display_options['filters']['combine']['exposed'] = TRUE;
 $handler->display->display_options['filters']['combine']['expose']['operator_id'] = 'combine_op';
-$handler->display->display_options['filters']['combine']['expose']['label'] = 'Pencarian';
+$handler->display->display_options['filters']['combine']['expose']['label'] = 'Pencarian :';
 $handler->display->display_options['filters']['combine']['expose']['operator'] = 'combine_op';
 $handler->display->display_options['filters']['combine']['expose']['identifier'] = 'combine';
 $handler->display->display_options['filters']['combine']['expose']['remember_roles'] = array(
@@ -149,24 +150,6 @@ $handler = $view->new_display('page', 'Page', 'page');
 $handler->display->display_options['path'] = 'master-jurusan-asal';
 $handler->display->display_options['menu']['type'] = 'normal';
 $handler->display->display_options['menu']['title'] = 'Jurusan Asal';
-$handler->display->display_options['menu']['weight'] = '0';
-$handler->display->display_options['menu']['context'] = 0;
-$handler->display->display_options['menu']['context_only_inline'] = 0;
-
-/* Display: Page */
-$handler = $view->new_display('page', 'Page', 'page_1');
-$handler->display->display_options['path'] = 'master-fakultas';
-$handler->display->display_options['menu']['type'] = 'normal';
-$handler->display->display_options['menu']['title'] = 'Fakultas';
-$handler->display->display_options['menu']['weight'] = '0';
-$handler->display->display_options['menu']['context'] = 0;
-$handler->display->display_options['menu']['context_only_inline'] = 0;
-
-/* Display: Page */
-$handler = $view->new_display('page', 'Page', 'page_2');
-$handler->display->display_options['path'] = 'master-fakultas';
-$handler->display->display_options['menu']['type'] = 'normal';
-$handler->display->display_options['menu']['title'] = 'Fakultas';
 $handler->display->display_options['menu']['weight'] = '0';
 $handler->display->display_options['menu']['context'] = 0;
 $handler->display->display_options['menu']['context_only_inline'] = 0;
