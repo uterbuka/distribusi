@@ -94,13 +94,13 @@ $handler->display->display_options['fields']['counter']['reverse'] = 0;
 $handler->display->display_options['fields']['field_kode_status_dp']['id'] = 'field_kode_status_dp';
 $handler->display->display_options['fields']['field_kode_status_dp']['table'] = 'field_data_field_kode_status_dp';
 $handler->display->display_options['fields']['field_kode_status_dp']['field'] = 'field_kode_status_dp';
-$handler->display->display_options['fields']['field_kode_status_dp']['label'] = 'Kode Status Nilai';
-/* Field: Taxonomy term: Term description */
-$handler->display->display_options['fields']['description']['id'] = 'description';
-$handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
-$handler->display->display_options['fields']['description']['field'] = 'description';
-$handler->display->display_options['fields']['description']['label'] = 'Keterangan Status Nilai';
-/* Field: Taxonomy term: Kode Status Kerja */
+$handler->display->display_options['fields']['field_kode_status_dp']['label'] = 'Kode';
+/* Field: Taxonomy term: Name */
+$handler->display->display_options['fields']['name']['id'] = 'name';
+$handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+$handler->display->display_options['fields']['name']['field'] = 'name';
+$handler->display->display_options['fields']['name']['label'] = 'Keterangan Status Nilai';
+/* Field: Taxonomy term: Kode */
 $handler->display->display_options['fields']['field_integer_code']['id'] = 'field_integer_code';
 $handler->display->display_options['fields']['field_integer_code']['table'] = 'field_data_field_integer_code';
 $handler->display->display_options['fields']['field_integer_code']['field'] = 'field_integer_code';

@@ -48,7 +48,7 @@ $data = array(
     ),
   ),
   'field_instance' => array(
-    'label' => 'Status Row Nilai',
+    'label' => 'Kode',
     'widget' => array(
       'weight' => '2',
       'type' => 'number',
@@ -74,10 +74,10 @@ $data = array(
           'prefix_suffix' => TRUE,
         ),
         'module' => 'number',
-        'weight' => 1,
+        'weight' => 0,
       ),
     ),
-    'required' => 1,
+    'required' => 0,
     'description' => '',
     'default_value' => NULL,
     'field_name' => 'field_integer_code',
