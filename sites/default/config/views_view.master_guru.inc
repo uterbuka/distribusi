@@ -92,11 +92,10 @@ $handler->display->display_options['fields']['counter']['field'] = 'counter';
 $handler->display->display_options['fields']['counter']['label'] = 'No';
 $handler->display->display_options['fields']['counter']['counter_start'] = '1';
 $handler->display->display_options['fields']['counter']['reverse'] = 0;
-/* Field: Taxonomy term: Kode UPBJJ */
+/* Field: Taxonomy term: Kode */
 $handler->display->display_options['fields']['field_integer_code']['id'] = 'field_integer_code';
 $handler->display->display_options['fields']['field_integer_code']['table'] = 'field_data_field_integer_code';
 $handler->display->display_options['fields']['field_integer_code']['field'] = 'field_integer_code';
-$handler->display->display_options['fields']['field_integer_code']['label'] = 'Kode Guru';
 $handler->display->display_options['fields']['field_integer_code']['settings'] = array(
   'thousand_separator' => ' ',
   'prefix_suffix' => 1,
@@ -139,15 +138,6 @@ $handler->display->display_options['filters']['combine']['fields'] = array(
   'field_integer_code' => 'field_integer_code',
   'name' => 'name',
 );
-
-/* Display: Page */
-$handler = $view->new_display('page', 'Page', 'page');
-$handler->display->display_options['path'] = 'master-fakultas';
-$handler->display->display_options['menu']['type'] = 'normal';
-$handler->display->display_options['menu']['title'] = 'Fakultas';
-$handler->display->display_options['menu']['weight'] = '0';
-$handler->display->display_options['menu']['context'] = 0;
-$handler->display->display_options['menu']['context_only_inline'] = 0;
 
 /* Display: Page */
 $handler = $view->new_display('page', 'Page', 'page_1');

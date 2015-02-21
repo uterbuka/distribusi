@@ -48,7 +48,7 @@ $data = array(
     ),
   ),
   'field_instance' => array(
-    'label' => 'Kode Guru',
+    'label' => 'Kode',
     'widget' => array(
       'weight' => '-5',
       'type' => 'number',
