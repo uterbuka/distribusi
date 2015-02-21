@@ -62,7 +62,7 @@ $handler->display->display_options['fields']['counter']['field'] = 'counter';
 $handler->display->display_options['fields']['counter']['label'] = 'No';
 $handler->display->display_options['fields']['counter']['counter_start'] = '1';
 $handler->display->display_options['fields']['counter']['reverse'] = 0;
-/* Field: Taxonomy term: kode status dp */
+/* Field: Taxonomy term: kode  */
 $handler->display->display_options['fields']['field_kode_status_dp']['id'] = 'field_kode_status_dp';
 $handler->display->display_options['fields']['field_kode_status_dp']['table'] = 'field_data_field_kode_status_dp';
 $handler->display->display_options['fields']['field_kode_status_dp']['field'] = 'field_kode_status_dp';
@@ -74,7 +74,7 @@ $handler->display->display_options['fields']['name']['label'] = 'Keterangan Stat
 $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
 $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
 $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-/* Sort criterion: Taxonomy term: kode status dp (field_kode_status_dp) */
+/* Sort criterion: Taxonomy term: kode  (field_kode_status_dp) */
 $handler->display->display_options['sorts']['field_kode_status_dp_value']['id'] = 'field_kode_status_dp_value';
 $handler->display->display_options['sorts']['field_kode_status_dp_value']['table'] = 'field_data_field_kode_status_dp';
 $handler->display->display_options['sorts']['field_kode_status_dp_value']['field'] = 'field_kode_status_dp_value';
@@ -85,7 +85,7 @@ $handler->display->display_options['filters']['machine_name']['field'] = 'machin
 $handler->display->display_options['filters']['machine_name']['value'] = array(
   'master_status_dp' => 'master_status_dp',
 );
-/* Filter criterion: Taxonomy term: kode status dp (field_kode_status_dp) */
+/* Filter criterion: Taxonomy term: kode  (field_kode_status_dp) */
 $handler->display->display_options['filters']['field_kode_status_dp_value']['id'] = 'field_kode_status_dp_value';
 $handler->display->display_options['filters']['field_kode_status_dp_value']['table'] = 'field_data_field_kode_status_dp';
 $handler->display->display_options['filters']['field_kode_status_dp_value']['field'] = 'field_kode_status_dp_value';

@@ -7,7 +7,7 @@
 $api = '2.0.0';
 
 $data = (object) array(
-  'vid' => '10',
+  'vid' => '11',
   'name' => 'Master Masa',
   'machine_name' => 'master_masa',
   'description' => '',

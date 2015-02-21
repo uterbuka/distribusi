@@ -90,7 +90,7 @@ $handler->display->display_options['fields']['counter']['field'] = 'counter';
 $handler->display->display_options['fields']['counter']['label'] = 'No';
 $handler->display->display_options['fields']['counter']['counter_start'] = '1';
 $handler->display->display_options['fields']['counter']['reverse'] = 0;
-/* Field: Taxonomy term: kode status dp */
+/* Field: Taxonomy term: kode  */
 $handler->display->display_options['fields']['field_kode_status_dp']['id'] = 'field_kode_status_dp';
 $handler->display->display_options['fields']['field_kode_status_dp']['table'] = 'field_data_field_kode_status_dp';
 $handler->display->display_options['fields']['field_kode_status_dp']['field'] = 'field_kode_status_dp';

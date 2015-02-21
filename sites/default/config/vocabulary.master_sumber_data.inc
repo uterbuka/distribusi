@@ -7,7 +7,7 @@
 $api = '2.0.0';
 
 $data = (object) array(
-  'vid' => '10',
+  'vid' => '14',
   'name' => 'Master Sumber Data',
   'machine_name' => 'master_sumber_data',
   'description' => '',

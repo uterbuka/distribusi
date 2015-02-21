@@ -7,10 +7,8 @@
 $api = '2.0.0';
 
 $data = array(
-  'permission' => 'delete terms in 3',
-  'roles' => array(
-    0 => 'authenticated user',
-  ),
+  'permission' => NULL,
+  'roles' => array(),
 );
 
 $dependencies = array();
@@ -18,5 +16,5 @@ $dependencies = array();
 $optional = array();
 
 $modules = array(
-  0 => 'taxonomy',
+  0 => '',
 );
