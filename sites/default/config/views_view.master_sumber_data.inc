@@ -37,7 +37,7 @@ $handler->display->display_options['header']['link']['field'] = 'link';
 $handler->display->display_options['header']['link']['label'] = 'Tambah Data';
 $handler->display->display_options['header']['link']['empty'] = TRUE;
 $handler->display->display_options['header']['link']['text'] = 'Tambah Data';
-$handler->display->display_options['header']['link']['path'] = 'http://local.ut.ac.id/admin/structure/taxonomy/master_sumber_data/add';
+$handler->display->display_options['header']['link']['path'] = 'admin/structure/taxonomy/master_sumber_data/add';
 $handler->display->display_options['header']['link']['class'] = 'btn btn-success';
 /* Footer: Global: Result summary */
 $handler->display->display_options['footer']['result']['id'] = 'result';
@@ -51,7 +51,7 @@ $handler->display->display_options['fields']['counter']['field'] = 'counter';
 $handler->display->display_options['fields']['counter']['label'] = 'No';
 $handler->display->display_options['fields']['counter']['counter_start'] = '1';
 $handler->display->display_options['fields']['counter']['reverse'] = 0;
-/* Field: Taxonomy term: Kode Sumber Data */
+/* Field: Taxonomy term: Kode */
 $handler->display->display_options['fields']['field_text_kode']['id'] = 'field_text_kode';
 $handler->display->display_options['fields']['field_text_kode']['table'] = 'field_data_field_text_kode';
 $handler->display->display_options['fields']['field_text_kode']['field'] = 'field_text_kode';
@@ -63,7 +63,7 @@ $handler->display->display_options['fields']['name']['label'] = 'Keterangan Sumb
 $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
 $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
 $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-/* Sort criterion: Taxonomy term: Kode Sumber Data (field_text_kode) */
+/* Sort criterion: Taxonomy term: Kode (field_text_kode) */
 $handler->display->display_options['sorts']['field_text_kode_value']['id'] = 'field_text_kode_value';
 $handler->display->display_options['sorts']['field_text_kode_value']['table'] = 'field_data_field_text_kode';
 $handler->display->display_options['sorts']['field_text_kode_value']['field'] = 'field_text_kode_value';
@@ -81,7 +81,7 @@ $handler->display->display_options['filters']['combine']['field'] = 'combine';
 $handler->display->display_options['filters']['combine']['operator'] = 'contains';
 $handler->display->display_options['filters']['combine']['exposed'] = TRUE;
 $handler->display->display_options['filters']['combine']['expose']['operator_id'] = 'combine_op';
-$handler->display->display_options['filters']['combine']['expose']['label'] = 'Cari';
+$handler->display->display_options['filters']['combine']['expose']['label'] = 'Pencarian :';
 $handler->display->display_options['filters']['combine']['expose']['operator'] = 'combine_op';
 $handler->display->display_options['filters']['combine']['expose']['identifier'] = 'combine';
 $handler->display->display_options['filters']['combine']['expose']['remember_roles'] = array(
@@ -98,7 +98,7 @@ $handler->display->display_options['filters']['combine']['fields'] = array(
 $handler = $view->new_display('page', 'Page', 'page');
 $handler->display->display_options['path'] = 'master-sumber-data';
 $handler->display->display_options['menu']['type'] = 'normal';
-$handler->display->display_options['menu']['title'] = 'Master Sumber Data';
+$handler->display->display_options['menu']['title'] = 'Sumber Data';
 $handler->display->display_options['menu']['weight'] = '0';
 $handler->display->display_options['menu']['context'] = 0;
 $handler->display->display_options['menu']['context_only_inline'] = 0;

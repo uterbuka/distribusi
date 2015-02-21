@@ -69,14 +69,14 @@ $data = array(
     ),
   ),
   'field_instance' => array(
-    'label' => 'Kode Sumber Data',
+    'label' => 'Kode',
     'widget' => array(
-      'weight' => 0,
+      'weight' => '0',
       'type' => 'text_textfield',
       'module' => 'text',
       'active' => 1,
       'settings' => array(
-        'size' => '5',
+        'size' => '3',
       ),
     ),
     'settings' => array(
@@ -92,7 +92,7 @@ $data = array(
         'weight' => 0,
       ),
     ),
-    'required' => 0,
+    'required' => 1,
     'description' => '',
     'default_value' => NULL,
     'field_name' => 'field_text_kode',
