@@ -1,0 +1,31 @@
+<?php
+
+/*
+ * Implements hook_form_alter()
+ */
+function puskom_taxonomy_form_alter(&$form, &$form_state, $form_id) {
+  // dsm($form_id);
+}
+
+/*
+ * Implements hook_form_ID_alter()
+ */
+function puskom_taxonomy_form_taxonomy_form_term_alter(&$form, &$form_state) {
+ if($form['#term']['vocabulary_machine_name'] == 'master_fakultas') {
+  $form['name']['#title'] = t('Nama Fakultas');
+  unset($form['description']);
+  unset($form['relations']);
+  }
+  else if($form['#term']['vocabulary_machine_name'] == 'master_upbjj') {
+  $form['name']['#title'] = t('Nama UPBJJ');
+  unset($form['description']);
+  unset($form['relations']);
+  // dsm($form);
+}
+  else if($form['#term']['vocabulary_machine_name'] == 'master_zona_waktu') {
+  $form['name']['#title'] = t('Nama Zona Waktu');
+  unset($form['description']);
+  unset($form['relations']);
+  // dsm($form);
+}
+}

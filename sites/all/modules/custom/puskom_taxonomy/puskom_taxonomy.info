@@ -1,0 +1,5 @@
+name = Puskom
+description = Puskom Modules.
+core = 7.x
+package = Puskom
+files[] = puskom_taxonomy.module
