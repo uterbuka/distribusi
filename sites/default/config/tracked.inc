@@ -32,6 +32,7 @@ $tracked = array (
   'variable.field_bundle_settings_taxonomy_term__master_sumber_data' => '39b5830efab9413d3c19561fba2d2b6b908e527d',
   'variable.field_bundle_settings_taxonomy_term__master_upbjj' => '43ceb678ac183105d1038baf5ad1b4fc04936e01',
   'variable.field_bundle_settings_taxonomy_term__master_zona_waktu' => '3ad3fa78d80188b907cdf57a6483527be7f12c01',
+  'variable.theme_default' => '62aacda22cf8153c898e13c09bcf01266fa7a9ff',
   'permission.access_overlay' => '8689a870a7abab2f7e90baa567490edd4a7ca948',
   'permission.administer_master_agama_vocabulary_terms' => 'c0640e49635b8702e7eb185b1f4649bcf6a5135c',
   'permission.administer_master_fakultas_vocabulary_terms' => '6726753922cc75aa4d0bc62d3782fe7561d4f2e4',
