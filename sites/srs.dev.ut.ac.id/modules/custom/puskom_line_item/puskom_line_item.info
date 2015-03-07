@@ -1,0 +1,6 @@
+name = Puskom
+description = Puskom Modules.
+core = 7.x
+package = Puskom
+files[] = puskom_line_item.module
+

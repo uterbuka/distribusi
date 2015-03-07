@@ -1,0 +1,65 @@
+<?php
+
+/** 
+Implements hook_form_alter()
+*/
+function puskom_line_item_form_alter(&$form, &$form_state, $form_id) 
+{
+ 
+// dsm($form_id);
+  
+}
+
+/**
+ Implements hook_form_ID_alter()
+ */
+function puskom_line_item_form_commerce_checkout_form_checkout_alter(&$form, &$form_state) 
+{
+  global $user;
+  
+  $profile = profile2_load_by_user($user, 'main');
+  $biodata = profile2_load_by_user($user, 'profile_mahasiswa');
+   //dsm($form);
+   //dsm($biodata);
+  // For each field in customer profile fill the form field with the $profile value
+  if (!empty($profile)) {
+		$form['customer_profile_billing']['commerce_customer_address'][LANGUAGE_NONE][0]['#address'] = $profile->field_postal_address[LANGUAGE_NONE][0];
+		
+		$form['customer_profile_billing']['field_nama_mahasiswa'][LANGUAGE_NONE][0]['value']['#default_value']= $biodata->field_nama_mahasiswa[LANGUAGE_NONE][0]['value'];
+		$form['customer_profile_billing']['field_alamat'][LANGUAGE_NONE][0]['value']['#default_value'] = $biodata->field_alamat[LANGUAGE_NONE][0]['value'];
+		$form['customer_profile_billing']['field_tanggal_lahir'][LANGUAGE_NONE][0]['value']['#default_value'] = $biodata->field_tanggal_lahir[LANGUAGE_NONE][0]['value'];
+		$form['customer_profile_billing']['field_tempat_lahir'][LANGUAGE_NONE][0]['value']['#default_value'] = $biodata->field_tempat_lahir[LANGUAGE_NONE][0]['value'];
+		$form['customer_profile_billing']['field_upbjj_sro'][LANGUAGE_NONE][0]['value']['#default_value'] = $biodata->field_upbjj[LANGUAGE_NONE][0]['value'];
+		$form['customer_profile_billing']['field_kode_kabko_rumah'][LANGUAGE_NONE][0]['value']['#default_value'] = $biodata->field_kode_kabko_rumah[LANGUAGE_NONE][0]['value'];
+		$form['customer_profile_billing']['field_kabko_tpu'][LANGUAGE_NONE][0]['value']['#default_value'] = $biodata->field_kode_kabko_tpu[LANGUAGE_NONE][0]['value'];
+		$form['customer_profile_billing']['field_kode_pos_rumah'][LANGUAGE_NONE][0]['value']['#default_value'] = $biodata->field_kode_pos_rumah[LANGUAGE_NONE][0]['value'];
+		$form['customer_profile_billing']['field_kode_pos_pokjar'][LANGUAGE_NONE][0]['value']['#default_value'] = $biodata->field_kode_pos_pokjar[LANGUAGE_NONE][0]['value'];
+		$form['customer_profile_billing']['field_agama'][LANGUAGE_NONE][0]['value']['#default_value'] = $biodata->field_agama[LANGUAGE_NONE][0]['value'];
+		$form['customer_profile_billing']['field_no_hp'][LANGUAGE_NONE][0]['value']['#default_value'] = $biodata->field_no_hp[LANGUAGE_NONE][0]['value'];
+		
+		$form['customer_profile_billing']['field_jenis_kelamin'][LANGUAGE_NONE][0]['value']['#default_value'] = $biodata->field_jenis_kelamin[LANGUAGE_NONE][0]['value'];
+		$form['customer_profile_billing']['field_status_kawin'][LANGUAGE_NONE][0]['value']['#default_value'] = $biodata->field_status_kawin[LANGUAGE_NONE][0]['value'];
+		$form['customer_profile_billing']['field_kewarganegaraan'][LANGUAGE_NONE][0]['value']['#default_value'] = $biodata->field_kewarganegaraan[LANGUAGE_NONE][0]['value'];
+		$form['customer_profile_billing']['field_pendidikan_akhir'][LANGUAGE_NONE][0]['value']['#default_value'] = $biodata->field_pendidikan_akhir[LANGUAGE_NONE][0]['value'];
+		$form['customer_profile_billing']['field_jurusan_asal'][LANGUAGE_NONE][0]['value']['#default_value'] = $biodata->field_jurusan_asal[LANGUAGE_NONE][0]['value'];
+		$form['customer_profile_billing']['field_lama_mengajar'][LANGUAGE_NONE][0]['value']['#default_value'] = $biodata->field_lama_mengajar[LANGUAGE_NONE][0]['value'];
+		$form['customer_profile_billing']['field_tahun_ijazah'][LANGUAGE_NONE][0]['value']['#default_value'] = $biodata->field_tahun_ijazah[LANGUAGE_NONE][0]['value'];
+		
+		
+		
+		
+		
+		
+		
+  }
+  elseif(user_is_logged_in()) {
+    // Redirect to user main profile page if no profile data found
+    drupal_set_message(t('Please complete your profile before continuo!'));
+    drupal_goto('user/' .$user->uid. '/edit/main', array(
+      'query' => array(
+        drupal_get_destination(),
+      )
+    ));
+  }
+}
+
