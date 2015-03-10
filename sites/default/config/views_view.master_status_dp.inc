@@ -105,7 +105,7 @@ $handler->display->display_options['filters']['field_kode_status_dp_value']['exp
 $handler = $view->new_display('page', 'Page', 'page');
 $handler->display->display_options['path'] = 'master-status-dp';
 $handler->display->display_options['menu']['type'] = 'normal';
-$handler->display->display_options['menu']['title'] = 'Master Status DP';
+$handler->display->display_options['menu']['title'] = 'Status DP';
 $handler->display->display_options['menu']['weight'] = '0';
 $handler->display->display_options['menu']['context'] = 0;
 $handler->display->display_options['menu']['context_only_inline'] = 0;

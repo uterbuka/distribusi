@@ -69,7 +69,7 @@ $data = array(
     ),
   ),
   'field_instance' => array(
-    'label' => 'kode status dp',
+    'label' => 'Kode',
     'widget' => array(
       'weight' => '0',
       'type' => 'text_textfield',
