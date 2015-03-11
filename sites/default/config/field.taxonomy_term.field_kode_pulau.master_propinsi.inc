@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * field.taxonomy_term.field_kprk.master_pos.inc
+ * field.taxonomy_term.field_kode_pulau.master_propinsi.inc
  */
 
 $api = '2.0.0';
@@ -11,7 +11,12 @@ $data = array(
     'translatable' => '0',
     'entity_types' => array(),
     'settings' => array(
-      'max_length' => '1',
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'master_pulau',
+          'parent' => '0',
+        ),
+      ),
     ),
     'storage' => array(
       'type' => 'field_sql_storage',
@@ -21,92 +26,88 @@ $data = array(
       'details' => array(
         'sql' => array(
           'FIELD_LOAD_CURRENT' => array(
-            'field_data_field_kprk' => array(
-              'value' => 'field_kprk_value',
-              'format' => 'field_kprk_format',
+            'field_data_field_kode_pulau' => array(
+              'tid' => 'field_kode_pulau_tid',
             ),
           ),
           'FIELD_LOAD_REVISION' => array(
-            'field_revision_field_kprk' => array(
-              'value' => 'field_kprk_value',
-              'format' => 'field_kprk_format',
+            'field_revision_field_kode_pulau' => array(
+              'tid' => 'field_kode_pulau_tid',
             ),
           ),
         ),
       ),
     ),
     'foreign keys' => array(
-      'format' => array(
-        'table' => 'filter_format',
+      'tid' => array(
+        'table' => 'taxonomy_term_data',
         'columns' => array(
-          'format' => 'format',
+          'tid' => 'tid',
         ),
       ),
     ),
     'indexes' => array(
-      'format' => array(
-        0 => 'format',
+      'tid' => array(
+        0 => 'tid',
       ),
     ),
-    'field_name' => 'field_kprk',
-    'type' => 'text',
-    'module' => 'text',
+    'field_name' => 'field_kode_pulau',
+    'type' => 'taxonomy_term_reference',
+    'module' => 'taxonomy',
     'active' => '1',
     'locked' => '0',
     'cardinality' => '1',
     'deleted' => '0',
     'columns' => array(
-      'value' => array(
-        'type' => 'varchar',
-        'length' => '1',
-        'not null' => FALSE,
-      ),
-      'format' => array(
-        'type' => 'varchar',
-        'length' => 255,
+      'tid' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
         'not null' => FALSE,
       ),
     ),
   ),
   'field_instance' => array(
-    'label' => 'KPRK',
+    'label' => 'Kode Pulau',
     'widget' => array(
-      'weight' => '2',
-      'type' => 'text_textfield',
-      'module' => 'text',
-      'active' => 1,
+      'weight' => '1',
+      'type' => 'options_select',
+      'module' => 'options',
+      'active' => 0,
       'settings' => array(
-        'size' => '1',
+        'size' => 60,
+        'autocomplete_path' => 'taxonomy/autocomplete',
       ),
     ),
     'settings' => array(
-      'text_processing' => '0',
       'user_register_form' => FALSE,
     ),
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'type' => 'text_default',
+        'type' => 'taxonomy_term_reference_link',
         'settings' => array(),
-        'module' => 'text',
-        'weight' => 1,
+        'module' => 'taxonomy',
+        'weight' => 0,
       ),
     ),
     'required' => 1,
     'description' => '',
     'default_value' => NULL,
-    'field_name' => 'field_kprk',
+    'field_name' => 'field_kode_pulau',
     'entity_type' => 'taxonomy_term',
-    'bundle' => 'master_pos',
+    'bundle' => 'master_propinsi',
     'deleted' => '0',
   ),
 );
 
-$dependencies = array();
+$dependencies = array(
+  'vocabulary.master_pulau' => 'vocabulary.master_pulau',
+);
 
 $optional = array();
 
 $modules = array(
   0 => 'field_sql_storage',
-  1 => 'text',
+  1 => 'taxonomy',
+  2 => 'options',
 );

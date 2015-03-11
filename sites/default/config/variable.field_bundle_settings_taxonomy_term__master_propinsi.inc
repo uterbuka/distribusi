@@ -1,22 +1,22 @@
 <?php
 /**
  * @file
- * variable.field_bundle_settings_taxonomy_term__master_pos.inc
+ * variable.field_bundle_settings_taxonomy_term__master_propinsi.inc
  */
 
 $api = '2.0.0';
 
 $data = array(
-  'name' => 'field_bundle_settings_taxonomy_term__master_pos',
+  'name' => 'field_bundle_settings_taxonomy_term__master_propinsi',
   'content' => array(
     'view_modes' => array(),
     'extra_fields' => array(
       'form' => array(
         'name' => array(
-          'weight' => '3',
+          'weight' => '2',
         ),
         'description' => array(
-          'weight' => '5',
+          'weight' => '3',
         ),
       ),
       'display' => array(),

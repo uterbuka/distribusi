@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * field.taxonomy_term.field_kprk.master_pos.inc
+ * field.taxonomy_term.field_kode_kabko.master_kabko.inc
  */
 
 $api = '2.0.0';
@@ -11,7 +11,7 @@ $data = array(
     'translatable' => '0',
     'entity_types' => array(),
     'settings' => array(
-      'max_length' => '1',
+      'max_length' => '5',
     ),
     'storage' => array(
       'type' => 'field_sql_storage',
@@ -21,15 +21,15 @@ $data = array(
       'details' => array(
         'sql' => array(
           'FIELD_LOAD_CURRENT' => array(
-            'field_data_field_kprk' => array(
-              'value' => 'field_kprk_value',
-              'format' => 'field_kprk_format',
+            'field_data_field_kode_kabko' => array(
+              'value' => 'field_kode_kabko_value',
+              'format' => 'field_kode_kabko_format',
             ),
           ),
           'FIELD_LOAD_REVISION' => array(
-            'field_revision_field_kprk' => array(
-              'value' => 'field_kprk_value',
-              'format' => 'field_kprk_format',
+            'field_revision_field_kode_kabko' => array(
+              'value' => 'field_kode_kabko_value',
+              'format' => 'field_kode_kabko_format',
             ),
           ),
         ),
@@ -48,7 +48,7 @@ $data = array(
         0 => 'format',
       ),
     ),
-    'field_name' => 'field_kprk',
+    'field_name' => 'field_kode_kabko',
     'type' => 'text',
     'module' => 'text',
     'active' => '1',
@@ -58,7 +58,7 @@ $data = array(
     'columns' => array(
       'value' => array(
         'type' => 'varchar',
-        'length' => '1',
+        'length' => '5',
         'not null' => FALSE,
       ),
       'format' => array(
@@ -69,14 +69,14 @@ $data = array(
     ),
   ),
   'field_instance' => array(
-    'label' => 'KPRK',
+    'label' => 'Kode Kabko',
     'widget' => array(
-      'weight' => '2',
+      'weight' => '0',
       'type' => 'text_textfield',
       'module' => 'text',
       'active' => 1,
       'settings' => array(
-        'size' => '1',
+        'size' => '60',
       ),
     ),
     'settings' => array(
@@ -89,15 +89,15 @@ $data = array(
         'type' => 'text_default',
         'settings' => array(),
         'module' => 'text',
-        'weight' => 1,
+        'weight' => 0,
       ),
     ),
     'required' => 1,
     'description' => '',
     'default_value' => NULL,
-    'field_name' => 'field_kprk',
+    'field_name' => 'field_kode_kabko',
     'entity_type' => 'taxonomy_term',
-    'bundle' => 'master_pos',
+    'bundle' => 'master_kabko',
     'deleted' => '0',
   ),
 );
