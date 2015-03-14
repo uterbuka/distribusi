@@ -80,4 +80,28 @@ function puskom_taxonomy_form_taxonomy_form_term_alter(&$form, &$form_state)
         $form['name']['#title'] = t('Nama Kabupaten/Kota');
         //dsm($form);
     }
+    else if($form['vocabulary_machine_name']['#value'] == 'master_pendidikan_akhir') {
+        $form['name']['#title'] = t('Nama Pendidikan Akhir');
+        //dsm($form);
+    }
+    else if($form['vocabulary_machine_name']['#value'] == 'master_jenjang_guru') {
+        $form['name']['#title'] = t('Keterangan');
+        $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#title']= t('Kode Jenjang Guru');
+        //dsm($form);
+    }
+    else if($form['vocabulary_machine_name']['#value'] == 'master_tujuan_masuk') {
+        $form['name']['#title'] = t('Keterangan');
+        $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#title']= t('Kode Tujuan Masuk');
+        //dsm($form);
+    }
+    else if($form['vocabulary_machine_name']['#value'] == 'master_pos') {
+        $form['name']['#title'] = t('Nama Pos');
+        $form['field_kode_pos'][LANGUAGE_NONE][0]['value']['#title']= t('Kode Pos');
+        //dsm($form);
+    }
+    else if($form['vocabulary_machine_name']['#value'] == 'master_sumber_data') {
+        $form['name']['#title'] = t('Nama Sumber Data');
+        $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#title']= t('Kode Sumber Data');
+        //dsm($form);
+    }
 }
