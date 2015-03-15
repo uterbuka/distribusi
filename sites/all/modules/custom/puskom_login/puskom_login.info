@@ -1,0 +1,5 @@
+name = Puskom Login
+description = Modules kustomisasi login.
+core = 7.x
+package = Puskom
+files[] = puskom_login.module

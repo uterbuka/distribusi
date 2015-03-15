@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * Implements hook_init()
+ */
+function puskom_login_init(){
+//global $user;
+  if(php_sapi_name() != 'cli') {
+    $path = current_path();
+    if(user_is_anonymous() && $path != 'user/login') {
+      drupal_goto('user/login');
+    }
+  }
+}
+
+/**
+ * Implements hook_menu_alter.
+ */
+function puskom_login_menu_alter(&$items){
+  $items['user/login']['type'] = MENU_CALLBACK;
+  $items['user/password']['type'] = MENU_CALLBACK;
+}
