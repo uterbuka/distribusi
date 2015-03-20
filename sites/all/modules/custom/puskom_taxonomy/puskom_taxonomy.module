@@ -109,44 +109,20 @@ function puskom_taxonomy_form_taxonomy_form_term_alter(&$form, &$form_state) {
   }
   elseif ($form['vocabulary_machine_name']['#value'] == 'master_waktu_ujian') {
     $form['name']['#title'] = t('Keterangan Waktu Ujian');
-    $form['field_text_code'][LANGUAGE_NONE][0]['value']['#title'] = t('Kode Waktu Ujian');
-    $form['field_text_code'][LANGUAGE_NONE][0]['value']['#maxlength'] = 2;
-    // dsm($form);
-  }
-  elseif ($form['vocabulary_machine_name']['#value'] == 'master_sumber_data_spp') {
-    $form['name']['#title'] = t('Nama Sumber Data');
-    $form['field_text_code'][LANGUAGE_NONE][0]['value']['#title'] = t('Kode Sumber Data');
-    $form['field_text_code'][LANGUAGE_NONE][0]['value']['#maxlength'] = 2;
+    $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#title'] = t('Kode Waktu Ujian');
+    $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#maxlength'] = 2;
     // dsm($form);
   }
   elseif ($form['vocabulary_machine_name']['#value'] == 'master_alih_kredit_jenis_berkas') {
     $form['name']['#title'] = t('Nama Jenis Berkas');
-    $form['field_text_code'][LANGUAGE_NONE][0]['value']['#title'] = t('Kode Jenis Berkas');
-    $form['field_text_code'][LANGUAGE_NONE][0]['value']['#maxlength'] = 1;
+    $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#title'] = t('Kode Jenis Berkas');
+    $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#maxlength'] = 1;
     // dsm($form);
   }
-  elseif ($form['vocabulary_machine_name']['#value'] == 'master_beasiswa') {
-    $form['name']['#title'] = t('Nama Beasiswa');
-    $form['field_text_code'][LANGUAGE_NONE][0]['value']['#title'] = t('Kode Beasiswa');
-    $form['field_text_code'][LANGUAGE_NONE][0]['value']['#maxlength'] = 3;
-    // dsm($form);
-  }
-  elseif ($form['vocabulary_machine_name']['#value'] == 'master_jenis_test_masuk') {
-    $form['name']['#title'] = t('Nama Ujian');
-    $form['field_text_code'][LANGUAGE_NONE][0]['value']['#title'] = t('Kode Jenis Ujian');
-    $form['field_text_code'][LANGUAGE_NONE][0]['value']['#maxlength'] = 1;
-    // dsm($form);
-  }
-  elseif ($form['vocabulary_machine_name']['#value'] == 'master_jenis_nilai') {
-    $form['name']['#title'] = t('Nama Jenis Nilai');
-    $form['field_text_code'][LANGUAGE_NONE][0]['value']['#title'] = t('Kode Jenis Nilai');
-    $form['field_text_code'][LANGUAGE_NONE][0]['value']['#maxlength'] = 2;
-    // dsm($form);
-  }
-  elseif ($form['vocabulary_machine_name']['#value'] == 'master_jenis_bayar') {
-    $form['name']['#title'] = t('Keterangan');
-    $form['field_text_code'][LANGUAGE_NONE][0]['value']['#title'] = t('Kode Jenis Bayar');
-    $form['field_text_code'][LANGUAGE_NONE][0]['value']['#maxlength'] = 3;
+  elseif ($form['vocabulary_machine_name']['#value'] == 'master_jenis_mata_kuliah') {
+    $form['name']['#title'] = t('Nama Jenis Mata Kuliah');
+    $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#title'] = t('Kode Jenis Mata Kuliah');
+    $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#maxlength'] = 1;
     // dsm($form);
   }
 }
