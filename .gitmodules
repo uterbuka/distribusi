@@ -1,0 +1,3 @@
+[submodule "sites/all/themes/garudanya-ut"]
+	path = sites/all/themes/garudanya-ut
+	url = https://github.com/uterbuka/garudanya-ut.git
