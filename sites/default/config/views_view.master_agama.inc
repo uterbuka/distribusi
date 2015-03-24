@@ -18,7 +18,7 @@ $view->disabled = FALSE; /* Edit this to true to make a default view disabled in
 
 /* Display: Master */
 $handler = $view->new_display('default', 'Master', 'default');
-$handler->display->display_options['title'] = 'Master agama';
+$handler->display->display_options['title'] = 'Master Agama';
 $handler->display->display_options['use_more_always'] = FALSE;
 $handler->display->display_options['access']['type'] = 'perm';
 $handler->display->display_options['access']['perm'] = 'administer master_agama vocabulary terms';
@@ -69,7 +69,7 @@ $handler->display->display_options['header']['link']['id'] = 'link';
 $handler->display->display_options['header']['link']['table'] = 'views';
 $handler->display->display_options['header']['link']['field'] = 'link';
 $handler->display->display_options['header']['link']['empty'] = TRUE;
-$handler->display->display_options['header']['link']['text'] = 'Tambah data';
+$handler->display->display_options['header']['link']['text'] = 'Tambah Data';
 $handler->display->display_options['header']['link']['path'] = 'admin/structure/taxonomy/master_agama/add';
 $handler->display->display_options['header']['link']['class'] = 'btn btn-success';
 /* Footer: Global: Result summary */
@@ -88,6 +88,7 @@ $handler->display->display_options['fields']['counter']['reverse'] = 0;
 $handler->display->display_options['fields']['field_integer_code']['id'] = 'field_integer_code';
 $handler->display->display_options['fields']['field_integer_code']['table'] = 'field_data_field_integer_code';
 $handler->display->display_options['fields']['field_integer_code']['field'] = 'field_integer_code';
+$handler->display->display_options['fields']['field_integer_code']['label'] = 'Kode Agama';
 $handler->display->display_options['fields']['field_integer_code']['settings'] = array(
   'thousand_separator' => '',
   'prefix_suffix' => 1,
