@@ -42,6 +42,7 @@ $handler->display->display_options['style_plugin'] = 'table';
 $handler->display->display_options['header']['link']['id'] = 'link';
 $handler->display->display_options['header']['link']['table'] = 'views';
 $handler->display->display_options['header']['link']['field'] = 'link';
+$handler->display->display_options['header']['link']['empty'] = TRUE;
 $handler->display->display_options['header']['link']['text'] = 'Tambah Data';
 $handler->display->display_options['header']['link']['path'] = 'admin/structure/taxonomy/master_beasiswa/add';
 $handler->display->display_options['header']['link']['class'] = 'btn btn-success';
