@@ -1,0 +1,17 @@
+<?php
+/**
+ * @file
+ */
+
+function puskom_views_filter_form_alter(&$form, &$form_state, $form_id) {
+
+  if ($form_id == 'views_exposed_form') {
+    // dsm($form);
+    // dsm($form_state);
+    $form['submit']['#attributes']['class'][] = 'btn btn-primary';
+    $form['reset']['#attributes']['class'][] = 'btn btn-primary';
+    /**if($form_state['view']->display_handler->handlers['filter']['combine']->value == '0'){
+    form_set_error('views_exposed_form','Test');
+    }**/
+  }
+}
