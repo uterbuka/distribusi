@@ -19,7 +19,6 @@ $view->disabled = FALSE; /* Edit this to true to make a default view disabled in
 /* Display: Master */
 $handler = $view->new_display('default', 'Master', 'default');
 $handler->display->display_options['title'] = 'Master Bank';
-$handler->display->display_options['use_ajax'] = TRUE;
 $handler->display->display_options['use_more_always'] = FALSE;
 $handler->display->display_options['access']['type'] = 'perm';
 $handler->display->display_options['access']['perm'] = 'administer master_bank vocabulary terms';
@@ -35,49 +34,15 @@ $handler->display->display_options['pager']['options']['offset'] = '0';
 $handler->display->display_options['pager']['options']['id'] = '0';
 $handler->display->display_options['pager']['options']['quantity'] = '9';
 $handler->display->display_options['pager']['options']['tags']['first'] = '« awal';
-$handler->display->display_options['pager']['options']['tags']['previous'] = '‹ kembali';
-$handler->display->display_options['pager']['options']['tags']['next'] = 'berikut ›';
+$handler->display->display_options['pager']['options']['tags']['previous'] = '‹ sebelumnya';
+$handler->display->display_options['pager']['options']['tags']['next'] = 'selanjutnya ›';
 $handler->display->display_options['pager']['options']['tags']['last'] = 'akhir »';
 $handler->display->display_options['style_plugin'] = 'table';
-$handler->display->display_options['style_options']['columns'] = array(
-  'field_kode_bank' => 'field_kode_bank',
-  'name' => 'name',
-  'field_status_aktif_bank' => 'field_status_aktif_bank',
-  'edit_term' => 'edit_term',
-);
-$handler->display->display_options['style_options']['default'] = '-1';
-$handler->display->display_options['style_options']['info'] = array(
-  'field_kode_bank' => array(
-    'sortable' => 0,
-    'default_sort_order' => 'asc',
-    'align' => 'views-align-center',
-    'separator' => '',
-    'empty_column' => 0,
-  ),
-  'name' => array(
-    'sortable' => 0,
-    'default_sort_order' => 'asc',
-    'align' => '',
-    'separator' => '',
-    'empty_column' => 0,
-  ),
-  'field_status_aktif_bank' => array(
-    'sortable' => 0,
-    'default_sort_order' => 'asc',
-    'align' => 'views-align-center',
-    'separator' => '',
-    'empty_column' => 0,
-  ),
-  'edit_term' => array(
-    'align' => 'views-align-center',
-    'separator' => '',
-    'empty_column' => 0,
-  ),
-);
 /* Header: Global: Link */
 $handler->display->display_options['header']['link']['id'] = 'link';
 $handler->display->display_options['header']['link']['table'] = 'views';
 $handler->display->display_options['header']['link']['field'] = 'link';
+$handler->display->display_options['header']['link']['empty'] = TRUE;
 $handler->display->display_options['header']['link']['text'] = 'Tambah Data';
 $handler->display->display_options['header']['link']['path'] = 'admin/structure/taxonomy/master_bank/add';
 $handler->display->display_options['header']['link']['class'] = 'btn btn-success';
@@ -86,11 +51,18 @@ $handler->display->display_options['footer']['result']['id'] = 'result';
 $handler->display->display_options['footer']['result']['table'] = 'views';
 $handler->display->display_options['footer']['result']['field'] = 'result';
 $handler->display->display_options['footer']['result']['content'] = 'Data ke @start sampai @end dari @total';
-/* Field: Taxonomy term: Kode Bank */
-$handler->display->display_options['fields']['field_kode_bank']['id'] = 'field_kode_bank';
-$handler->display->display_options['fields']['field_kode_bank']['table'] = 'field_data_field_kode_bank';
-$handler->display->display_options['fields']['field_kode_bank']['field'] = 'field_kode_bank';
-$handler->display->display_options['fields']['field_kode_bank']['label'] = 'Kode';
+/* Field: Global: View result counter */
+$handler->display->display_options['fields']['counter']['id'] = 'counter';
+$handler->display->display_options['fields']['counter']['table'] = 'views';
+$handler->display->display_options['fields']['counter']['field'] = 'counter';
+$handler->display->display_options['fields']['counter']['label'] = 'No.';
+$handler->display->display_options['fields']['counter']['counter_start'] = '1';
+$handler->display->display_options['fields']['counter']['reverse'] = 0;
+/* Field: Taxonomy term: Kode */
+$handler->display->display_options['fields']['field_text_kode']['id'] = 'field_text_kode';
+$handler->display->display_options['fields']['field_text_kode']['table'] = 'field_data_field_text_kode';
+$handler->display->display_options['fields']['field_text_kode']['field'] = 'field_text_kode';
+$handler->display->display_options['fields']['field_text_kode']['label'] = 'Kode Bank';
 /* Field: Taxonomy term: Name */
 $handler->display->display_options['fields']['name']['id'] = 'name';
 $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
@@ -98,24 +70,12 @@ $handler->display->display_options['fields']['name']['field'] = 'name';
 $handler->display->display_options['fields']['name']['label'] = 'Nama Bank';
 $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
 $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
-/* Field: Taxonomy term: Status Aktif Bank */
-$handler->display->display_options['fields']['field_status_aktif_bank']['id'] = 'field_status_aktif_bank';
-$handler->display->display_options['fields']['field_status_aktif_bank']['table'] = 'field_data_field_status_aktif_bank';
-$handler->display->display_options['fields']['field_status_aktif_bank']['field'] = 'field_status_aktif_bank';
-$handler->display->display_options['fields']['field_status_aktif_bank']['settings'] = array(
-  'thousand_separator' => ' ',
-  'prefix_suffix' => 1,
-);
 /* Field: Taxonomy term: Term edit link */
 $handler->display->display_options['fields']['edit_term']['id'] = 'edit_term';
 $handler->display->display_options['fields']['edit_term']['table'] = 'taxonomy_term_data';
 $handler->display->display_options['fields']['edit_term']['field'] = 'edit_term';
 $handler->display->display_options['fields']['edit_term']['label'] = '';
 $handler->display->display_options['fields']['edit_term']['text'] = 'Ubah';
-/* Sort criterion: Taxonomy term: Kode Bank (field_kode_bank) */
-$handler->display->display_options['sorts']['field_kode_bank_value']['id'] = 'field_kode_bank_value';
-$handler->display->display_options['sorts']['field_kode_bank_value']['table'] = 'field_data_field_kode_bank';
-$handler->display->display_options['sorts']['field_kode_bank_value']['field'] = 'field_kode_bank_value';
 /* Filter criterion: Taxonomy vocabulary: Machine name */
 $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
 $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
@@ -139,9 +99,8 @@ $handler->display->display_options['filters']['combine']['expose']['remember_rol
   3 => 0,
 );
 $handler->display->display_options['filters']['combine']['fields'] = array(
-  'field_kode_bank' => 'field_kode_bank',
+  'field_text_kode' => 'field_text_kode',
   'name' => 'name',
-  'field_status_aktif_bank' => 'field_status_aktif_bank',
 );
 
 /* Display: Page */
@@ -162,5 +121,4 @@ $modules = array(
   0 => 'views',
   1 => 'taxonomy',
   2 => 'text',
-  3 => 'number',
 );

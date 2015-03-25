@@ -17,17 +17,17 @@ $data = array(
     'extra_fields' => array(
       'form' => array(
         'name' => array(
-          'weight' => '-5',
+          'weight' => '-3',
         ),
         'description' => array(
-          'weight' => '0',
+          'weight' => '-1',
         ),
       ),
       'display' => array(
         'description' => array(
           'default' => array(
-            'weight' => '0',
-            'visible' => FALSE,
+            'weight' => '-3',
+            'visible' => TRUE,
           ),
         ),
       ),

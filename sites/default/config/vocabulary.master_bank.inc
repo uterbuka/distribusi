@@ -7,10 +7,10 @@
 $api = '2.0.0';
 
 $data = (object) array(
-  'vid' => '15',
+  'vid' => '39',
   'name' => 'Master Bank',
   'machine_name' => 'master_bank',
-  'description' => 'Master Bank',
+  'description' => '',
   'hierarchy' => '0',
   'module' => 'taxonomy',
   'weight' => '0',

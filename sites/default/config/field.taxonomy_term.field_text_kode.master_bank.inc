@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * field.taxonomy_term.field_kode_bank.master_bank.inc
+ * field.taxonomy_term.field_text_kode.master_bank.inc
  */
 
 $api = '2.0.0';
@@ -11,7 +11,7 @@ $data = array(
     'translatable' => '0',
     'entity_types' => array(),
     'settings' => array(
-      'max_length' => '1',
+      'max_length' => '25',
     ),
     'storage' => array(
       'type' => 'field_sql_storage',
@@ -21,15 +21,15 @@ $data = array(
       'details' => array(
         'sql' => array(
           'FIELD_LOAD_CURRENT' => array(
-            'field_data_field_kode_bank' => array(
-              'value' => 'field_kode_bank_value',
-              'format' => 'field_kode_bank_format',
+            'field_data_field_text_kode' => array(
+              'value' => 'field_text_kode_value',
+              'format' => 'field_text_kode_format',
             ),
           ),
           'FIELD_LOAD_REVISION' => array(
-            'field_revision_field_kode_bank' => array(
-              'value' => 'field_kode_bank_value',
-              'format' => 'field_kode_bank_format',
+            'field_revision_field_text_kode' => array(
+              'value' => 'field_text_kode_value',
+              'format' => 'field_text_kode_format',
             ),
           ),
         ),
@@ -48,7 +48,7 @@ $data = array(
         0 => 'format',
       ),
     ),
-    'field_name' => 'field_kode_bank',
+    'field_name' => 'field_text_kode',
     'type' => 'text',
     'module' => 'text',
     'active' => '1',
@@ -58,7 +58,7 @@ $data = array(
     'columns' => array(
       'value' => array(
         'type' => 'varchar',
-        'length' => '1',
+        'length' => '25',
         'not null' => FALSE,
       ),
       'format' => array(
@@ -69,14 +69,14 @@ $data = array(
     ),
   ),
   'field_instance' => array(
-    'label' => 'Kode Bank',
+    'label' => 'Kode',
     'widget' => array(
-      'weight' => '1',
+      'weight' => '-5',
       'type' => 'text_textfield',
       'module' => 'text',
       'active' => 1,
       'settings' => array(
-        'size' => '2',
+        'size' => '1',
       ),
     ),
     'settings' => array(
@@ -87,15 +87,15 @@ $data = array(
       'default' => array(
         'label' => 'above',
         'type' => 'text_default',
-        'weight' => '0',
+        'weight' => '-5',
         'settings' => array(),
         'module' => 'text',
       ),
     ),
-    'required' => 1,
+    'required' => 0,
     'description' => '',
     'default_value' => NULL,
-    'field_name' => 'field_kode_bank',
+    'field_name' => 'field_text_kode',
     'entity_type' => 'taxonomy_term',
     'bundle' => 'master_bank',
     'deleted' => '0',
