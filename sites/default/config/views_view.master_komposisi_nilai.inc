@@ -34,8 +34,8 @@ $handler->display->display_options['pager']['options']['offset'] = '0';
 $handler->display->display_options['pager']['options']['id'] = '0';
 $handler->display->display_options['pager']['options']['quantity'] = '9';
 $handler->display->display_options['pager']['options']['tags']['first'] = '« awal';
-$handler->display->display_options['pager']['options']['tags']['previous'] = '‹ sebelum';
-$handler->display->display_options['pager']['options']['tags']['next'] = 'berikut ›';
+$handler->display->display_options['pager']['options']['tags']['previous'] = '‹ sebelumnya';
+$handler->display->display_options['pager']['options']['tags']['next'] = 'selanjutnya ›';
 $handler->display->display_options['pager']['options']['tags']['last'] = 'akhir »';
 $handler->display->display_options['style_plugin'] = 'table';
 /* Header: Global: Link */
@@ -70,7 +70,6 @@ $handler->display->display_options['fields']['name']['field'] = 'name';
 $handler->display->display_options['fields']['name']['label'] = 'Nama Komposisi Nilai';
 $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
 $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
-$handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
 /* Field: Taxonomy term: Term edit link */
 $handler->display->display_options['fields']['edit_term']['id'] = 'edit_term';
 $handler->display->display_options['fields']['edit_term']['table'] = 'taxonomy_term_data';

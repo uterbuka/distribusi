@@ -92,7 +92,7 @@ $data = array(
         'weight' => 0,
       ),
     ),
-    'required' => 0,
+    'required' => 1,
     'description' => '',
     'default_value' => NULL,
     'field_name' => 'field_text_kode',

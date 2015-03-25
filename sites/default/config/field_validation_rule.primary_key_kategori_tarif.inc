@@ -27,7 +27,7 @@ $rule->settings = array(
   ),
   'errors' => 0,
 );
-$rule->error_message = 'Kode Kategori Tarif adalah 2 karakter';
+$rule->error_message = 'Data sudah ada.';
 
 
 $dependencies = array();
