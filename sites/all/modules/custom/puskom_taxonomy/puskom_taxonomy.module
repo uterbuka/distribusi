@@ -275,4 +275,10 @@ function puskom_taxonomy_form_taxonomy_form_term_alter(&$form, &$form_state) {
     $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#maxlength'] = 1;
     // dsm($form);
   }
+  elseif ($form['vocabulary_machine_name']['#value'] == 'master_sumber_data_nilai') {
+    $form['name']['#title'] = t('Keterangan');
+    $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#title'] = t('Kode Sumber Data Nilai');
+    $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#maxlength'] = 2;
+    // dsm($form);
+  }
 }
