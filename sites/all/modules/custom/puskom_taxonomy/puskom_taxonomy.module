@@ -245,4 +245,34 @@ function puskom_taxonomy_form_taxonomy_form_term_alter(&$form, &$form_state) {
     $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#maxlength'] = 2;
     // dsm($form);
   }
+  elseif ($form['vocabulary_machine_name']['#value'] == 'master_nomor_blanko') {
+    $form['name']['#title'] = t('Keterangan Nomor Blanko');
+    $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#title'] = t('Kode Nomor Blanko');
+    $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#maxlength'] = 2;
+    // dsm($form);
+  }
+  elseif ($form['vocabulary_machine_name']['#value'] == 'master_status_valid') {
+    $form['name']['#title'] = t('Keterangan');
+    $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#title'] = t('Kode Status Valid');
+    $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#maxlength'] = 2;
+    // dsm($form);
+  }
+  elseif ($form['vocabulary_machine_name']['#value'] == 'master_kelompok_mtk_kurikulum') {
+    $form['name']['#title'] = t('Nama Kelompok');
+    $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#title'] = t('Kode Kelompok');
+    $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#maxlength'] = 2;
+    // dsm($form);
+  }
+  elseif ($form['vocabulary_machine_name']['#value'] == 'master_tingkat_mengajar') {
+    $form['name']['#title'] = t('Nama Tingkat Mengajar');
+    $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#title'] = t('Kode Tingkat Mengajar');
+    $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#maxlength'] = 1;
+    // dsm($form);
+  }
+  elseif ($form['vocabulary_machine_name']['#value'] == 'master_sifat_ujian') {
+    $form['name']['#title'] = t('Keterangan');
+    $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#title'] = t('Kode Sifat Ujian');
+    $form['field_text_kode'][LANGUAGE_NONE][0]['value']['#maxlength'] = 1;
+    // dsm($form);
+  }
 }
