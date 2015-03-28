@@ -11,7 +11,7 @@ $data = array(
     'translatable' => '0',
     'entity_types' => array(),
     'settings' => array(
-      'max_length' => '2',
+      'max_length' => '25',
     ),
     'storage' => array(
       'type' => 'field_sql_storage',
@@ -58,7 +58,7 @@ $data = array(
     'columns' => array(
       'value' => array(
         'type' => 'varchar',
-        'length' => '2',
+        'length' => '25',
         'not null' => FALSE,
       ),
       'format' => array(
