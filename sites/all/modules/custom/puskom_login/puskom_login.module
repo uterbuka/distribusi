@@ -20,3 +20,10 @@ function puskom_login_menu_alter(&$items){
   $items['user/login']['type'] = MENU_CALLBACK;
   $items['user/password']['type'] = MENU_CALLBACK;
 }
+
+/**
+ * Implements hook_form_ID_alter.
+ */
+function puskom_login_form_user_login_alter(&$form, &$form_state){
+  drupal_set_title(t(''));
+}
