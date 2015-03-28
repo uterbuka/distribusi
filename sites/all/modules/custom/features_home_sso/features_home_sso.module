@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the features home sso feature.
+ */
+
+include_once 'features_home_sso.features.inc';
