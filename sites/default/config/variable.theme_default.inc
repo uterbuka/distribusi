@@ -8,7 +8,7 @@ $api = '2.0.0';
 
 $data = array(
   'name' => 'theme_default',
-  'content' => 'garuda',
+  'content' => 'uttheme',
 );
 
 $dependencies = array();
