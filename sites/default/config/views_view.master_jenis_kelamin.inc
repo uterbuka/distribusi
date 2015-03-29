@@ -21,6 +21,7 @@ $handler = $view->new_display('default', 'Master', 'default');
 $handler->display->display_options['title'] = 'Master Jenis Kelamin';
 $handler->display->display_options['use_more_always'] = FALSE;
 $handler->display->display_options['access']['type'] = 'perm';
+$handler->display->display_options['access']['perm'] = 'administer master_jenis_kelamin vocabulary terms';
 $handler->display->display_options['cache']['type'] = 'none';
 $handler->display->display_options['query']['type'] = 'views_query';
 $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -34,8 +35,8 @@ $handler->display->display_options['pager']['options']['offset'] = '0';
 $handler->display->display_options['pager']['options']['id'] = '0';
 $handler->display->display_options['pager']['options']['quantity'] = '9';
 $handler->display->display_options['pager']['options']['tags']['first'] = '« awal';
-$handler->display->display_options['pager']['options']['tags']['previous'] = '‹ sebelum';
-$handler->display->display_options['pager']['options']['tags']['next'] = 'berikut ›';
+$handler->display->display_options['pager']['options']['tags']['previous'] = '‹ sebelumnya';
+$handler->display->display_options['pager']['options']['tags']['next'] = 'selanjutnya ›';
 $handler->display->display_options['pager']['options']['tags']['last'] = 'akhir »';
 $handler->display->display_options['style_plugin'] = 'table';
 /* Header: Global: Link */
@@ -77,6 +78,10 @@ $handler->display->display_options['fields']['edit_term']['table'] = 'taxonomy_t
 $handler->display->display_options['fields']['edit_term']['field'] = 'edit_term';
 $handler->display->display_options['fields']['edit_term']['label'] = '';
 $handler->display->display_options['fields']['edit_term']['text'] = 'Ubah';
+/* Sort criterion: Taxonomy term: Kode (field_text_kode) */
+$handler->display->display_options['sorts']['field_text_kode_value']['id'] = 'field_text_kode_value';
+$handler->display->display_options['sorts']['field_text_kode_value']['table'] = 'field_data_field_text_kode';
+$handler->display->display_options['sorts']['field_text_kode_value']['field'] = 'field_text_kode_value';
 /* Filter criterion: Taxonomy vocabulary: Machine name */
 $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
 $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';

@@ -21,6 +21,7 @@ $handler = $view->new_display('default', 'Master', 'default');
 $handler->display->display_options['title'] = 'Master Jenjang Guru';
 $handler->display->display_options['use_more_always'] = FALSE;
 $handler->display->display_options['access']['type'] = 'perm';
+$handler->display->display_options['access']['perm'] = 'administer master_jenjang_guru vocabulary terms';
 $handler->display->display_options['cache']['type'] = 'none';
 $handler->display->display_options['query']['type'] = 'views_query';
 $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -29,6 +30,13 @@ $handler->display->display_options['exposed_form']['options']['reset_button'] = 
 $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Muat Ulang';
 $handler->display->display_options['pager']['type'] = 'full';
 $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+$handler->display->display_options['pager']['options']['offset'] = '0';
+$handler->display->display_options['pager']['options']['id'] = '0';
+$handler->display->display_options['pager']['options']['quantity'] = '9';
+$handler->display->display_options['pager']['options']['tags']['first'] = '« awal';
+$handler->display->display_options['pager']['options']['tags']['previous'] = '‹ sebelumnya';
+$handler->display->display_options['pager']['options']['tags']['next'] = 'selanjutnya ›';
+$handler->display->display_options['pager']['options']['tags']['last'] = 'akhir »';
 $handler->display->display_options['style_plugin'] = 'table';
 /* Header: Global: Link */
 $handler->display->display_options['header']['link']['id'] = 'link';
@@ -54,11 +62,11 @@ $handler->display->display_options['fields']['counter']['reverse'] = 0;
 $handler->display->display_options['fields']['field_text_kode']['id'] = 'field_text_kode';
 $handler->display->display_options['fields']['field_text_kode']['table'] = 'field_data_field_text_kode';
 $handler->display->display_options['fields']['field_text_kode']['field'] = 'field_text_kode';
-/* Field: Taxonomy term: Term description */
-$handler->display->display_options['fields']['description']['id'] = 'description';
-$handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
-$handler->display->display_options['fields']['description']['field'] = 'description';
-$handler->display->display_options['fields']['description']['label'] = 'Keterangan';
+/* Field: Taxonomy term: Name */
+$handler->display->display_options['fields']['name']['id'] = 'name';
+$handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+$handler->display->display_options['fields']['name']['field'] = 'name';
+$handler->display->display_options['fields']['name']['label'] = 'Keterangan';
 /* Field: Taxonomy term: Term edit link */
 $handler->display->display_options['fields']['edit_term']['id'] = 'edit_term';
 $handler->display->display_options['fields']['edit_term']['table'] = 'taxonomy_term_data';
@@ -93,7 +101,7 @@ $handler->display->display_options['filters']['combine']['expose']['remember_rol
 );
 $handler->display->display_options['filters']['combine']['fields'] = array(
   'field_text_kode' => 'field_text_kode',
-  'description' => 'description',
+  'name' => 'name',
 );
 
 /* Display: Page */

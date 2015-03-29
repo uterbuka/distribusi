@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * field.taxonomy_term.field_text_kode.master_jenjang_guru.inc
+ * field.taxonomy_term.field_text_kode.master_berita.inc
  */
 
 $api = '2.0.0';
@@ -76,7 +76,7 @@ $data = array(
       'module' => 'text',
       'active' => 1,
       'settings' => array(
-        'size' => '60',
+        'size' => '3',
       ),
     ),
     'settings' => array(
@@ -87,9 +87,9 @@ $data = array(
       'default' => array(
         'label' => 'above',
         'type' => 'text_default',
-        'weight' => '1',
         'settings' => array(),
         'module' => 'text',
+        'weight' => 0,
       ),
     ),
     'required' => 1,
@@ -97,7 +97,7 @@ $data = array(
     'default_value' => NULL,
     'field_name' => 'field_text_kode',
     'entity_type' => 'taxonomy_term',
-    'bundle' => 'master_jenjang_guru',
+    'bundle' => 'master_berita',
     'deleted' => '0',
   ),
 );
