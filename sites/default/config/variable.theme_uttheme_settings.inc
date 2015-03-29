@@ -1,0 +1,82 @@
+<?php
+/**
+ * @file
+ * variable.theme_uttheme_settings.inc
+ */
+
+$api = '2.0.0';
+
+$data = array(
+  'name' => 'theme_uttheme_settings',
+  'content' => array(
+    'toggle_logo' => 1,
+    'toggle_name' => 1,
+    'toggle_slogan' => 1,
+    'toggle_node_user_picture' => 1,
+    'toggle_comment_user_picture' => 1,
+    'toggle_comment_user_verification' => 1,
+    'toggle_favicon' => 1,
+    'toggle_main_menu' => 1,
+    'toggle_secondary_menu' => 1,
+    'default_logo' => 1,
+    'logo_path' => '',
+    'logo_upload' => '',
+    'default_favicon' => 1,
+    'favicon_path' => '',
+    'favicon_upload' => '',
+    'general__active_tab' => 'edit-theme-settings',
+    'bootstrap__active_tab' => 'edit-components',
+    'bootstrap_breadcrumb' => '1',
+    'bootstrap_breadcrumb_home' => 0,
+    'bootstrap_breadcrumb_title' => 1,
+    'bootstrap_navbar_position' => 'static-top',
+    'bootstrap_navbar_inverse' => 0,
+    'bootstrap_region_well-header' => '',
+    'bootstrap_region_well-help' => '',
+    'bootstrap_region_well-sidebar_first' => 'well',
+    'bootstrap_region_well-content' => '',
+    'bootstrap_region_well-sidebar_second' => '',
+    'bootstrap_region_well-footer' => '',
+    'bootstrap_anchors_fix' => 1,
+    'bootstrap_anchors_smooth_scrolling' => 1,
+    'bootstrap_popover_enabled' => 1,
+    'bootstrap_popover_animation' => 1,
+    'bootstrap_popover_html' => 0,
+    'bootstrap_popover_placement' => 'right',
+    'bootstrap_popover_selector' => '',
+    'bootstrap_popover_trigger' => array(
+      'click' => 'click',
+      'hover' => 0,
+      'focus' => 0,
+      'manual' => 0,
+    ),
+    'bootstrap_popover_title' => '',
+    'bootstrap_popover_content' => '',
+    'bootstrap_popover_delay' => '0',
+    'bootstrap_popover_container' => 'body',
+    'bootstrap_tooltip_enabled' => 1,
+    'bootstrap_tooltip_descriptions' => 1,
+    'bootstrap_tooltip_animation' => 1,
+    'bootstrap_tooltip_html' => 0,
+    'bootstrap_tooltip_placement' => 'auto left',
+    'bootstrap_tooltip_selector' => '',
+    'bootstrap_tooltip_trigger' => array(
+      'hover' => 'hover',
+      'focus' => 'focus',
+      'click' => 0,
+      'manual' => 0,
+    ),
+    'bootstrap_tooltip_delay' => '0',
+    'bootstrap_tooltip_container' => 'body',
+    'bootstrap_cdn' => '3.0.2',
+    'bootstrap_bootswatch' => '',
+    'bootstrap_rebuild_registry' => 0,
+    'bootstrap_toggle_jquery_error' => 0,
+  ),
+);
+
+$dependencies = array();
+
+$optional = array();
+
+$modules = array();
