@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * @file
+ */
+
+/**
+ * Implements hook_form_alter().
+ */
+function puskom_profile2_form_alter(&$form, &$form_state, $form_id) {
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function puskom_profile2_form_profile2_edit_profile_mahasiswa_form_alter(&$form, &$form_state) {
+  $base_url = 'http://dev.ut.ac.id';
+  $data = array(
+    'username' => 'admin',
+    'password' => 'PuskomFeb07',
+  );
+  $data = http_build_query($data, '', '&');
+  $options = array(
+    'headers' => array(
+      'Accept' => 'application/json',
+    ),
+    'method' => 'POST',
+    'data' => $data,
+  );  
+  $response = drupal_http_request($base_url . '/api/user/login', $options);
+  $data = json_decode($response->data);  if ($response->code == 200) {
+    $options['headers']['Cookie'] = $data->session_name . '=' . $data->sessid;
+
+    $data = array();
+    $options['data'] = http_build_query($data, '', '&');
+    $options['method'] = 'GET';
+    $response = drupal_http_request($base_url . '/api/user/1', $options);
+
+    $data = json_decode($response->data);
+  }
+  else {
+    drupal_set_message(t('Failed Connection via REST'));
+  }
+
+}
