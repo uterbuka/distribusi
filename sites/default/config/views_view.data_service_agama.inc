@@ -20,7 +20,10 @@ $view->disabled = FALSE; /* Edit this to true to make a default view disabled in
 $handler = $view->new_display('default', 'Master', 'default');
 $handler->display->display_options['title'] = 'services data agama';
 $handler->display->display_options['use_more_always'] = FALSE;
-$handler->display->display_options['access']['type'] = 'perm';
+$handler->display->display_options['access']['type'] = 'role';
+$handler->display->display_options['access']['role'] = array(
+  2 => '2',
+);
 $handler->display->display_options['cache']['type'] = 'none';
 $handler->display->display_options['query']['type'] = 'views_query';
 $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -97,7 +100,7 @@ $handler->display->display_options['filters']['machine_name']['value'] = array(
 
 /* Display: Services */
 $handler = $view->new_display('services', 'Services', 'services_agama');
-$handler->display->display_options['path'] = 'c6e3f58804cfb7d83cac08c61526294a';
+$handler->display->display_options['path'] = 'services-data-master-agama';
 
 
 $dependencies = array();

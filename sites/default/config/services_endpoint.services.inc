@@ -33,80 +33,15 @@ $endpoint->server_settings = array(
   ),
 );
 $endpoint->resources = array(
-  'node' => array(
+  'services-data-master-agama' => array(
+    'alias' => 'stamamcamt',
     'operations' => array(
-      'retrieve' => array(
-        'enabled' => '1',
-      ),
-      'create' => array(
-        'enabled' => '1',
-      ),
-      'update' => array(
-        'enabled' => '1',
-      ),
-      'delete' => array(
-        'enabled' => '1',
-      ),
       'index' => array(
-        'enabled' => '1',
-      ),
-    ),
-    'relationships' => array(
-      'files' => array(
-        'enabled' => '1',
-      ),
-      'comments' => array(
-        'enabled' => '1',
-      ),
-    ),
-    'targeted_actions' => array(
-      'attach_file' => array(
-        'enabled' => '1',
-      ),
-    ),
-  ),
-  'taxonomy_term' => array(
-    'operations' => array(
-      'retrieve' => array(
-        'enabled' => '1',
-      ),
-      'create' => array(
-        'enabled' => '1',
-      ),
-      'update' => array(
-        'enabled' => '1',
-      ),
-      'delete' => array(
-        'enabled' => '1',
-      ),
-      'index' => array(
-        'enabled' => '1',
-      ),
-    ),
-    'actions' => array(
-      'selectNodes' => array(
         'enabled' => '1',
       ),
     ),
   ),
   'user' => array(
-    'operations' => array(
-      'retrieve' => array(
-        'enabled' => '1',
-      ),
-      'create' => array(
-        'enabled' => '1',
-      ),
-      'update' => array(
-        'enabled' => '1',
-      ),
-      'delete' => array(
-        'enabled' => '1',
-      ),
-      'index' => array(
-        'enabled' => '1',
-      ),
-    ),
     'actions' => array(
       'login' => array(
         'enabled' => '1',
@@ -117,21 +52,11 @@ $endpoint->resources = array(
       'token' => array(
         'enabled' => '1',
       ),
-      'request_new_password' => array(
-        'enabled' => '1',
-      ),
-      'register' => array(
-        'enabled' => '1',
-      ),
     ),
-    'targeted_actions' => array(
-      'cancel' => array(
-        'enabled' => '1',
-      ),
-      'password_reset' => array(
-        'enabled' => '1',
-      ),
-      'resend_welcome_email' => array(
+  ),
+  'views' => array(
+    'operations' => array(
+      'retrieve' => array(
         'enabled' => '1',
       ),
     ),
