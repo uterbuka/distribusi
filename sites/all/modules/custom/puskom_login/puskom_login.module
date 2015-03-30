@@ -4,9 +4,13 @@
  * Implements hook_init()
  */
 function puskom_login_init(){
-//global $user;
-  if(php_sapi_name() != 'cli') {
-    $path = current_path();
+
+  $path = current_path();
+  $is_api = substr($path, 0, 3);
+  if($is_api == 'api') {
+	//do nothing
+  }elseif(php_sapi_name() != 'cli') {
+ 
     if(user_is_anonymous() && $path != 'user/login') {
       drupal_goto('user/login');
     }
