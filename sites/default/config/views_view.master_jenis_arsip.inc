@@ -1,27 +1,27 @@
 <?php
 /**
  * @file
- * views_view.master_biner.inc
+ * views_view.master_jenis_arsip.inc
  */
 
 $api = '2.0.0';
 
 $data = $view = new view();
-$view->name = 'master_biner';
+$view->name = 'master_jenis_arsip';
 $view->description = '';
 $view->tag = 'default';
 $view->base_table = 'taxonomy_term_data';
-$view->human_name = 'Master Biner';
+$view->human_name = 'Master Jenis Arsip';
 $view->core = 7;
 $view->api_version = '3.0';
 $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
 /* Display: Master */
 $handler = $view->new_display('default', 'Master', 'default');
-$handler->display->display_options['title'] = 'Master Biner';
+$handler->display->display_options['title'] = 'Master Jenis Arsip';
 $handler->display->display_options['use_more_always'] = FALSE;
 $handler->display->display_options['access']['type'] = 'perm';
-$handler->display->display_options['access']['perm'] = 'administer master_biner vocabulary terms';
+$handler->display->display_options['access']['perm'] = 'administer master_jenis_arsip vocabulary terms';
 $handler->display->display_options['cache']['type'] = 'none';
 $handler->display->display_options['query']['type'] = 'views_query';
 $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -44,7 +44,7 @@ $handler->display->display_options['header']['link']['table'] = 'views';
 $handler->display->display_options['header']['link']['field'] = 'link';
 $handler->display->display_options['header']['link']['empty'] = TRUE;
 $handler->display->display_options['header']['link']['text'] = 'Tambah Data';
-$handler->display->display_options['header']['link']['path'] = 'admin/structure/taxonomy/master_biner/add';
+$handler->display->display_options['header']['link']['path'] = 'admin/structure/taxonomy/master_jenis_arsip/add';
 $handler->display->display_options['header']['link']['class'] = 'btn btn-success';
 /* Footer: Global: Result summary */
 $handler->display->display_options['footer']['result']['id'] = 'result';
@@ -62,19 +62,19 @@ $handler->display->display_options['fields']['counter']['reverse'] = 0;
 $handler->display->display_options['fields']['field_text_kode']['id'] = 'field_text_kode';
 $handler->display->display_options['fields']['field_text_kode']['table'] = 'field_data_field_text_kode';
 $handler->display->display_options['fields']['field_text_kode']['field'] = 'field_text_kode';
-$handler->display->display_options['fields']['field_text_kode']['label'] = 'Biner';
+$handler->display->display_options['fields']['field_text_kode']['label'] = 'Kode Jenis Arsip';
 /* Field: Taxonomy term: Name */
 $handler->display->display_options['fields']['name']['id'] = 'name';
 $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
 $handler->display->display_options['fields']['name']['field'] = 'name';
-$handler->display->display_options['fields']['name']['label'] = 'Biner Mate';
+$handler->display->display_options['fields']['name']['label'] = 'Nama Jenis Arsip';
 $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
 $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
 /* Field: Taxonomy term: Kode */
 $handler->display->display_options['fields']['field_integer_code']['id'] = 'field_integer_code';
 $handler->display->display_options['fields']['field_integer_code']['table'] = 'field_data_field_integer_code';
 $handler->display->display_options['fields']['field_integer_code']['field'] = 'field_integer_code';
-$handler->display->display_options['fields']['field_integer_code']['label'] = 'Nilai';
+$handler->display->display_options['fields']['field_integer_code']['label'] = 'Status Data-1';
 $handler->display->display_options['fields']['field_integer_code']['settings'] = array(
   'thousand_separator' => ' ',
   'prefix_suffix' => 1,
@@ -83,7 +83,7 @@ $handler->display->display_options['fields']['field_integer_code']['settings'] =
 $handler->display->display_options['fields']['field_kode_integer_lainnya']['id'] = 'field_kode_integer_lainnya';
 $handler->display->display_options['fields']['field_kode_integer_lainnya']['table'] = 'field_data_field_kode_integer_lainnya';
 $handler->display->display_options['fields']['field_kode_integer_lainnya']['field'] = 'field_kode_integer_lainnya';
-$handler->display->display_options['fields']['field_kode_integer_lainnya']['label'] = 'Nilai Mate';
+$handler->display->display_options['fields']['field_kode_integer_lainnya']['label'] = 'Status Data-2';
 $handler->display->display_options['fields']['field_kode_integer_lainnya']['settings'] = array(
   'thousand_separator' => ' ',
   'prefix_suffix' => 1,
@@ -103,7 +103,7 @@ $handler->display->display_options['filters']['machine_name']['id'] = 'machine_n
 $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
 $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
 $handler->display->display_options['filters']['machine_name']['value'] = array(
-  'master_biner' => 'master_biner',
+  'master_jenis_arsip' => 'master_jenis_arsip',
 );
 /* Filter criterion: Global: Combine fields filter */
 $handler->display->display_options['filters']['combine']['id'] = 'combine';
@@ -129,9 +129,9 @@ $handler->display->display_options['filters']['combine']['fields'] = array(
 
 /* Display: Page */
 $handler = $view->new_display('page', 'Page', 'page');
-$handler->display->display_options['path'] = 'master-biner';
+$handler->display->display_options['path'] = 'master-jenis-arsip';
 $handler->display->display_options['menu']['type'] = 'normal';
-$handler->display->display_options['menu']['title'] = 'Biner';
+$handler->display->display_options['menu']['title'] = 'Jenis Arsip';
 $handler->display->display_options['menu']['weight'] = '0';
 $handler->display->display_options['menu']['context'] = 0;
 $handler->display->display_options['menu']['context_only_inline'] = 0;
