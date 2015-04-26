@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * permission.administer_master_status_aktif_vocabulary_terms.inc
+ * permission.administer_master_jenis_do_vocabulary_terms.inc
  */
 
 $api = '2.0.0';
 
 $data = array(
-  'permission' => 'administer master_status_aktif vocabulary terms',
+  'permission' => 'administer master_jenis_do vocabulary terms',
   'roles' => array(
     0 => 'authenticated user',
   ),
