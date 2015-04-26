@@ -45,7 +45,7 @@ $handler->display->display_options['header']['link']['field'] = 'link';
 $handler->display->display_options['header']['link']['empty'] = TRUE;
 $handler->display->display_options['header']['link']['text'] = 'Tambah Data';
 $handler->display->display_options['header']['link']['path'] = 'admin/structure/taxonomy/master_status_aktif/add';
-$handler->display->display_options['header']['link']['class'] = 'btn-btn-success';
+$handler->display->display_options['header']['link']['class'] = 'btn btn-success';
 /* Footer: Global: Result summary */
 $handler->display->display_options['footer']['result']['id'] = 'result';
 $handler->display->display_options['footer']['result']['table'] = 'views';
@@ -79,6 +79,10 @@ $handler->display->display_options['fields']['edit_term']['table'] = 'taxonomy_t
 $handler->display->display_options['fields']['edit_term']['field'] = 'edit_term';
 $handler->display->display_options['fields']['edit_term']['label'] = '';
 $handler->display->display_options['fields']['edit_term']['text'] = 'Ubah';
+/* Sort criterion: Taxonomy term: Kode Status Aktif (field_kode_status_aktif) */
+$handler->display->display_options['sorts']['field_kode_status_aktif_value']['id'] = 'field_kode_status_aktif_value';
+$handler->display->display_options['sorts']['field_kode_status_aktif_value']['table'] = 'field_data_field_kode_status_aktif';
+$handler->display->display_options['sorts']['field_kode_status_aktif_value']['field'] = 'field_kode_status_aktif_value';
 /* Filter criterion: Taxonomy vocabulary: Machine name */
 $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
 $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';

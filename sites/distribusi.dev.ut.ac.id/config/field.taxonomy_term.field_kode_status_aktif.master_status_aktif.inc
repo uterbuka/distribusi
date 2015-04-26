@@ -58,7 +58,7 @@ $data = array(
     ),
     'settings' => array(
       'min' => '1',
-      'max' => '',
+      'max' => '9',
       'prefix' => '',
       'suffix' => '',
       'user_register_form' => FALSE,
