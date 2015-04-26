@@ -18,7 +18,7 @@ $rule->bundle = 'master_proses_status';
 $rule->validator = 'field_validation_length_validator';
 $rule->settings = array(
   'min' => '1',
-  'max' => '',
+  'max' => '1',
   'bypass' => 0,
   'roles' => array(
     1 => 0,
@@ -27,7 +27,7 @@ $rule->settings = array(
   ),
   'errors' => 0,
 );
-$rule->error_message = 'Kode status proses maksimal sepuluh karakter';
+$rule->error_message = 'Kode status proses maksimal satu karakter';
 
 
 $dependencies = array();

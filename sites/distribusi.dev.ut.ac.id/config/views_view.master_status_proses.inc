@@ -45,7 +45,7 @@ $handler->display->display_options['header']['link']['field'] = 'link';
 $handler->display->display_options['header']['link']['empty'] = TRUE;
 $handler->display->display_options['header']['link']['text'] = 'Tambah Data';
 $handler->display->display_options['header']['link']['path'] = 'admin/structure/taxonomy/master_proses_status/add';
-$handler->display->display_options['header']['link']['class'] = 'btn-btn-success';
+$handler->display->display_options['header']['link']['class'] = 'btn btn-success';
 /* Footer: Global: Result summary */
 $handler->display->display_options['footer']['result']['id'] = 'result';
 $handler->display->display_options['footer']['result']['table'] = 'views';

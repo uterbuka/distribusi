@@ -50,14 +50,15 @@ $data = array(
   'field_instance' => array(
     'label' => 'Kode Status Proses',
     'widget' => array(
-      'type' => 'number',
       'weight' => '-5',
-      'settings' => array(),
+      'type' => 'number',
       'module' => 'number',
+      'active' => 0,
+      'settings' => array(),
     ),
     'settings' => array(
-      'min' => '',
-      'max' => '',
+      'min' => '1',
+      'max' => '9',
       'prefix' => '',
       'suffix' => '',
       'user_register_form' => FALSE,
@@ -76,13 +77,13 @@ $data = array(
         'module' => 'number',
       ),
     ),
-    'required' => FALSE,
+    'required' => 1,
     'description' => '',
+    'default_value' => NULL,
     'field_name' => 'field_kode_status_proses',
     'entity_type' => 'taxonomy_term',
     'bundle' => 'master_proses_status',
     'deleted' => '0',
-    'default_value' => NULL,
   ),
 );
 
