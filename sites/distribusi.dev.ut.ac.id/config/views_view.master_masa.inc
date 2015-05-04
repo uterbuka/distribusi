@@ -62,13 +62,24 @@ $handler->display->display_options['fields']['counter']['reverse'] = 0;
 $handler->display->display_options['fields']['field_masa']['id'] = 'field_masa';
 $handler->display->display_options['fields']['field_masa']['table'] = 'field_data_field_masa';
 $handler->display->display_options['fields']['field_masa']['field'] = 'field_masa';
-/* Field: Taxonomy term: Name */
-$handler->display->display_options['fields']['name']['id'] = 'name';
-$handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
-$handler->display->display_options['fields']['name']['field'] = 'name';
-$handler->display->display_options['fields']['name']['label'] = 'Kode Status';
-$handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
-$handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+/* Field: Taxonomy term: Kode Status Aktif */
+$handler->display->display_options['fields']['field_kode_status_aktif1']['id'] = 'field_kode_status_aktif1';
+$handler->display->display_options['fields']['field_kode_status_aktif1']['table'] = 'field_data_field_kode_status_aktif1';
+$handler->display->display_options['fields']['field_kode_status_aktif1']['field'] = 'field_kode_status_aktif1';
+$handler->display->display_options['fields']['field_kode_status_aktif1']['type'] = 'taxonomy_term_reference_plain';
+$handler->display->display_options['fields']['field_kode_status_aktif1']['settings'] = array(
+  'custom_link_to_entity' => 0,
+  'custom_prefix' => '',
+  'custom_suffix' => '',
+  'custom_reverse' => 0,
+  'custom_trim' => 0,
+  'custom_strtolower' => 0,
+  'custom_strtoupper' => 0,
+  'custom_ucfirst' => 0,
+  'custom_ucwords' => 0,
+  'custom_strip_tags' => 0,
+  'custom_strip_preserve' => '',
+);
 /* Field: Taxonomy term: Term edit link */
 $handler->display->display_options['fields']['edit_term']['id'] = 'edit_term';
 $handler->display->display_options['fields']['edit_term']['table'] = 'taxonomy_term_data';
@@ -96,7 +107,6 @@ $handler->display->display_options['filters']['combine']['expose']['operator_id'
 $handler->display->display_options['filters']['combine']['expose']['label'] = 'Pencarian';
 $handler->display->display_options['filters']['combine']['expose']['operator'] = 'combine_op';
 $handler->display->display_options['filters']['combine']['expose']['identifier'] = 'combine';
-$handler->display->display_options['filters']['combine']['expose']['required'] = TRUE;
 $handler->display->display_options['filters']['combine']['expose']['remember_roles'] = array(
   2 => '2',
   1 => 0,
@@ -104,7 +114,7 @@ $handler->display->display_options['filters']['combine']['expose']['remember_rol
 );
 $handler->display->display_options['filters']['combine']['fields'] = array(
   'field_masa' => 'field_masa',
-  'name' => 'name',
+  'field_kode_status_aktif1' => 'field_kode_status_aktif1',
 );
 
 /* Display: Page */
