@@ -66,13 +66,24 @@ $handler->display->display_options['fields']['field_kode_status_rakit']['setting
   'thousand_separator' => ' ',
   'prefix_suffix' => 1,
 );
-/* Field: Taxonomy term: Name */
-$handler->display->display_options['fields']['name']['id'] = 'name';
-$handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
-$handler->display->display_options['fields']['name']['field'] = 'name';
-$handler->display->display_options['fields']['name']['label'] = 'Nama Status Rakit';
-$handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
-$handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+/* Field: Taxonomy term: Nama Status Rakit */
+$handler->display->display_options['fields']['field_nama_status_rakit']['id'] = 'field_nama_status_rakit';
+$handler->display->display_options['fields']['field_nama_status_rakit']['table'] = 'field_data_field_nama_status_rakit';
+$handler->display->display_options['fields']['field_nama_status_rakit']['field'] = 'field_nama_status_rakit';
+$handler->display->display_options['fields']['field_nama_status_rakit']['type'] = 'text_plain';
+$handler->display->display_options['fields']['field_nama_status_rakit']['settings'] = array(
+  'custom_link_to_entity' => 1,
+  'custom_prefix' => '',
+  'custom_suffix' => '',
+  'custom_reverse' => 0,
+  'custom_trim' => 0,
+  'custom_strtolower' => 0,
+  'custom_strtoupper' => 0,
+  'custom_ucfirst' => 1,
+  'custom_ucwords' => 0,
+  'custom_strip_tags' => 0,
+  'custom_strip_preserve' => '',
+);
 /* Field: Taxonomy term: Term edit link */
 $handler->display->display_options['fields']['edit_term']['id'] = 'edit_term';
 $handler->display->display_options['fields']['edit_term']['table'] = 'taxonomy_term_data';
@@ -107,7 +118,7 @@ $handler->display->display_options['filters']['combine']['expose']['remember_rol
 );
 $handler->display->display_options['filters']['combine']['fields'] = array(
   'field_kode_status_rakit' => 'field_kode_status_rakit',
-  'name' => 'name',
+  'field_nama_status_rakit' => 'field_nama_status_rakit',
 );
 
 /* Display: Page */
@@ -128,4 +139,5 @@ $modules = array(
   0 => 'views',
   1 => 'taxonomy',
   2 => 'number',
+  3 => 'text',
 );

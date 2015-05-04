@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * field.taxonomy_term.field_kode_jenis_do.master_jenis_do.inc
+ * field.taxonomy_term.field_nama_status_proses.master_proses_status.inc
  */
 
 $api = '2.0.0';
@@ -10,7 +10,9 @@ $data = array(
   'field_config' => array(
     'translatable' => '0',
     'entity_types' => array(),
-    'settings' => array(),
+    'settings' => array(
+      'max_length' => '45',
+    ),
     'storage' => array(
       'type' => 'field_sql_storage',
       'settings' => array(),
@@ -19,60 +21,76 @@ $data = array(
       'details' => array(
         'sql' => array(
           'FIELD_LOAD_CURRENT' => array(
-            'field_data_field_kode_jenis_do' => array(
-              'value' => 'field_kode_jenis_do_value',
+            'field_data_field_nama_status_proses' => array(
+              'value' => 'field_nama_status_proses_value',
+              'format' => 'field_nama_status_proses_format',
             ),
           ),
           'FIELD_LOAD_REVISION' => array(
-            'field_revision_field_kode_jenis_do' => array(
-              'value' => 'field_kode_jenis_do_value',
+            'field_revision_field_nama_status_proses' => array(
+              'value' => 'field_nama_status_proses_value',
+              'format' => 'field_nama_status_proses_format',
             ),
           ),
         ),
       ),
     ),
-    'foreign keys' => array(),
-    'indexes' => array(),
-    'field_name' => 'field_kode_jenis_do',
-    'type' => 'number_integer',
-    'module' => 'number',
+    'foreign keys' => array(
+      'format' => array(
+        'table' => 'filter_format',
+        'columns' => array(
+          'format' => 'format',
+        ),
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'field_permissions' => array(
+      'type' => '0',
+    ),
+    'field_name' => 'field_nama_status_proses',
+    'type' => 'text',
+    'module' => 'text',
     'active' => '1',
     'locked' => '0',
     'cardinality' => '1',
     'deleted' => '0',
     'columns' => array(
       'value' => array(
-        'type' => 'int',
+        'type' => 'varchar',
+        'length' => '45',
+        'not null' => FALSE,
+      ),
+      'format' => array(
+        'type' => 'varchar',
+        'length' => 255,
         'not null' => FALSE,
       ),
     ),
   ),
   'field_instance' => array(
-    'label' => 'Kode Jenis DO',
+    'label' => 'Nama Status Proses',
     'widget' => array(
-      'weight' => '-5',
-      'type' => 'number',
-      'module' => 'number',
-      'active' => 0,
-      'settings' => array(),
+      'weight' => '-4',
+      'type' => 'text_textfield',
+      'module' => 'text',
+      'active' => 1,
+      'settings' => array(
+        'size' => '60',
+      ),
     ),
     'settings' => array(
-      'min' => '1',
-      'max' => '9',
-      'prefix' => '',
-      'suffix' => '',
+      'text_processing' => '0',
       'user_register_form' => FALSE,
     ),
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'type' => 'number_integer',
-        'weight' => '0',
+        'type' => 'text_default',
         'settings' => array(
-          'thousand_separator' => ' ',
-          'decimal_separator' => '.',
-          'scale' => 0,
-          'prefix_suffix' => TRUE,
           'custom_link_to_entity' => '',
           'custom_prefix' => '',
           'custom_suffix' => '',
@@ -85,15 +103,16 @@ $data = array(
           'custom_strip_tags' => '',
           'custom_strip_preserve' => '',
         ),
-        'module' => 'number',
+        'module' => 'text',
+        'weight' => -4,
       ),
     ),
     'required' => 1,
     'description' => '',
     'default_value' => NULL,
-    'field_name' => 'field_kode_jenis_do',
+    'field_name' => 'field_nama_status_proses',
     'entity_type' => 'taxonomy_term',
-    'bundle' => 'master_jenis_do',
+    'bundle' => 'master_proses_status',
     'deleted' => '0',
   ),
 );
@@ -104,5 +123,5 @@ $optional = array();
 
 $modules = array(
   0 => 'field_sql_storage',
-  1 => 'number',
+  1 => 'text',
 );

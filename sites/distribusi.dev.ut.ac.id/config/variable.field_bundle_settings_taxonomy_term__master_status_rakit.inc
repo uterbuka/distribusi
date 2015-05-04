@@ -13,7 +13,7 @@ $data = array(
     'extra_fields' => array(
       'form' => array(
         'name' => array(
-          'weight' => '-4',
+          'weight' => '-3',
         ),
         'description' => array(
           'weight' => '0',
