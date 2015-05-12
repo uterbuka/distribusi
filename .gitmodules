@@ -4,3 +4,6 @@
 [submodule "sites/all/themes/uttheme"]
 	path = sites/all/themes/uttheme
 	url = https://github.com/uterbuka/garudanya-ut.git
+[submodule "sites/distribusi.dev.ut.ac.id/themes/distribusitheme"]
+	path = sites/distribusi.dev.ut.ac.id/themes/distribusitheme
+	url = ../distribusitheme.git
