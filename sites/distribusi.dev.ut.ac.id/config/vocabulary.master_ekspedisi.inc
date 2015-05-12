@@ -1,15 +1,15 @@
 <?php
 /**
  * @file
- * vocabulary.master_status_aktif.inc
+ * vocabulary.master_ekspedisi.inc
  */
 
 $api = '2.0.0';
 
 $data = (object) array(
-  'vid' => '10',
-  'name' => 'Master Status Aktif',
-  'machine_name' => 'master_status_aktif',
+  'vid' => '14',
+  'name' => 'Master Ekspedisi',
+  'machine_name' => 'master_ekspedisi',
   'description' => '',
   'hierarchy' => '0',
   'module' => 'taxonomy',
