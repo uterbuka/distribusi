@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ */
+
+/**
+ * Implements hook_form_alter().
+ */
+function puskom_distribusi_form_alter(&$form, &$form_state, $form_id) {
+
+  // dsm($form_id);
+}
+
+/*
+ * Implements hook_form_ID_alter()
+ */
+function puskom_distribusi_form_taxonomy_form_term_alter(&$form, &$form_state) {
+
+  unset($form['name']);
+  unset($form['description']);
+  unset($form['relations']);  
+}

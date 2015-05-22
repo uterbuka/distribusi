@@ -1,0 +1,5 @@
+name = Puskom
+description = Module untuk validasi form distribusi.
+core = 7.x
+package = Puskom
+files[] = puskom_distribusi.module
